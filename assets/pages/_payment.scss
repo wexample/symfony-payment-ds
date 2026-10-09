@@ -1,0 +1,15 @@
+// What the payment pages are laid with: a card per thing — what is paid, the
+// form paying it, the payment read —, the lead heading a list, the messages
+// telling the outcome, the payment's fields in columns, its status as a
+// marker, the refunds as a table, the actions in a row.
+@use '@wexample/symfony-design-system/css/shapes/block';
+@use '@wexample/symfony-design-system/css/shapes/lead';
+@use '@wexample/symfony-design-system/css/shapes/stack';
+@use '@wexample/symfony-design-system/css/shapes/cluster';
+@use '@wexample/symfony-design-system/components/button/button';
+@use '@wexample/symfony-design-system/components/message/message';
+@use '@wexample/symfony-design-system/components/properties/properties';
+@use '@wexample/symfony-design-system/components/marker/marker';
+@use '@wexample/symfony-design-system/components/date-display/date-display';
+@use '@wexample/symfony-design-system/components/data-table/data-table';
+@use '@wexample/symfony-design-system/components/pagination/pagination';
