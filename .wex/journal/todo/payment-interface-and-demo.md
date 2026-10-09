@@ -60,3 +60,18 @@ Reste, non demandé pour l'instant :
 - l'étape de paiement dans un tunnel (avec symfony-cart-ds) ; la démo des tunnels garde son
   paiement simulé à elle, sans symfony-payment ;
 - Mercure (symfony-live) pour la page de retour, à la place de l'interrogation.
+
+### Stripe (2026-10-09)
+
+- `symfony-remote-payment` : `BrowserConfirmationInterface` (le fournisseur dit quel composant
+  confirme le paiement dans le navigateur, et avec quoi) ; `symfony-remote-payment-stripe`
+  l'implémente (`public_key`), et crée ses PaymentIntents avec `automatic_payment_methods`
+  (l'API refuse désormais `payment_method_types`).
+- `symfony-payment-ds` : composant `stripe-payment` (Payment Element, Stripe.js chargé depuis
+  Stripe), affiché par la page de retour tant que le paiement attend son payeur ; retour marqué
+  `confirmed`, puis attente du webhook.
+- MOJOE design system : clés de test dans `.env.local` (jamais commitées), conteneur `stripe`
+  (CLI) en local seulement, qui relaie les événements vers le webhook. En prod : un endpoint
+  Stripe sur `https://<domaine>/_payment/webhook/stripe` et ses clés dans l'environnement.
+- Le faux prestataire de la démo passe sur `demo_card`.
+- Vérifié au navigateur : carte de test 4242 → webhook relayé (200) → « Paiement reçu ».
