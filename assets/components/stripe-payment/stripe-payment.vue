@@ -1,6 +1,7 @@
 <script>
 import Message from '@wexample/symfony-design-system/components/message/message.vue';
 import Spinner from '@wexample/symfony-design-system/components/spinner/spinner.vue';
+import { AssetsServiceEvents } from '@wexample/symfony-loader/js/Services/AssetsService';
 
 const T = 'WexampleSymfonyPaymentDsBundle.components.stripe-payment.stripe-payment::';
 
@@ -24,6 +25,19 @@ function loadStripeJs() {
   });
 
   return stripeJsLoading;
+}
+
+// A colour of the page as Stripe reads one: whatever the design system wrote
+// it in — oklch, color-mix —, drawn once and read back as rgb.
+function stripeColor(value) {
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = 1;
+  const context = canvas.getContext('2d');
+  context.fillStyle = value;
+  context.fillRect(0, 0, 1, 1);
+  const [r, g, b] = context.getImageData(0, 0, 1, 1).data;
+
+  return `rgb(${r}, ${g}, ${b})`;
 }
 
 // A Stripe payment confirmed by its payer: Stripe's own form (Payment
@@ -65,7 +79,8 @@ export default {
     try {
       const Stripe = await loadStripeJs();
       this.stripe = Stripe(this.publicKey);
-      this.elements = this.stripe.elements({ clientSecret: this.clientSecret });
+      this.elements = this.stripe.elements({ clientSecret: this.clientSecret, appearance: this.appearance() });
+      this.app.services.events.listen(AssetsServiceEvents.USAGE_CHANGE, this.onUsageChange);
       const element = this.elements.create('payment');
       element.on('ready', () => {
         this.ready = true;
@@ -76,7 +91,37 @@ export default {
     }
   },
 
+  beforeUnmount() {
+    this.app.services.events.forget(AssetsServiceEvents.USAGE_CHANGE, this.onUsageChange);
+  },
+
   methods: {
+    // Stripe's form dressed as the page around it: its dark theme on a dark
+    // scheme, the accent, the surfaces, the inks, the font and the corners
+    // of the design system — read again when the theme changes.
+    appearance() {
+      const style = getComputedStyle(this.$el);
+      const read = (name, fallback) => style.getPropertyValue(name).trim() || fallback;
+      const dark = !!this.$el.closest('.usage-color-scheme-dark');
+
+      return {
+        theme: dark ? 'night' : 'stripe',
+        variables: {
+          colorPrimary: stripeColor(read('--accent-9', '#2f7de1')),
+          colorBackground: stripeColor(read('--surface-1', dark ? '#1f1f1f' : '#ffffff')),
+          colorText: stripeColor(read('--text-color-default', dark ? '#eeeeee' : '#222222')),
+          colorTextSecondary: stripeColor(read('--text-color-muted', '#888888')),
+          colorDanger: stripeColor(read('--error-9', '#df1b41')),
+          fontFamily: read('--font-family-base', 'system-ui, sans-serif'),
+          borderRadius: read('--radius-control', '6px')
+        }
+      };
+    },
+
+    onUsageChange() {
+      this.elements?.update({ appearance: this.appearance() });
+    },
+
     t(key) {
       return this.trans(`${T}${key}`);
     },
