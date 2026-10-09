@@ -35,3 +35,28 @@ Le tunnel d'achat complet (panier, adresse, paiement, confirmation) relève plut
 - Seulement les composants du design system (pas de HTML brut ni de CSS propre) ; actions de page en `page_title_actions`, modales et panneaux du loader.
 - À vérifier dans MOJOE design system (`MOJOE/local/design-system`), sans commiter ce dépôt : il appartient au propriétaire.
 - Les parcours multi-acteurs (payeur, admin) peuvent devenir des scénarios symfony-testing (`symfony-testing/.wex/knowledge/usage/scenarios.md.j2`), comme `tests/Scenario/` de MOJOE design system.
+
+## Status (2026-10-09, agent design system)
+
+Fait, vérifié au navigateur dans MOJOE design system (demo-admin) :
+
+- **symfony-payment** : rôle `administration.role` (null → pages et liste complète en 404),
+  API `api/payment/list` (`scope=mine|all`, `status` multiple, `provider`, `search`, tri,
+  pagination) et `api/payment-refund/list?payment=`, `PaymentAccessService::ownerReferenceOf()`
+  / `isOwnedBy()` (référence propriétaire = id de l'utilisateur), `PayableRegistry::find()`,
+  entités exportées en TS (`assets/`). Tests 13/13.
+- **symfony-payment-ds** : config `methods` et `bank_transfer` ; `PaymentCheckoutService`
+  (paiement ouvert ou repris, envoyé au prestataire, URL suivante) ; pages `/payments/`
+  (liste, payer `pay/{type}/{id}`, retour signé `{id}/return`, fiche, reçu), `/admin/payments/`
+  (liste filtrable, fiche : relire, marquer reçu, annuler, rembourser total ou partiel) ;
+  vues `payment-table` et `payment-status` (attente du statut par interrogation).
+- **symfony-payment-demo** : catalogue sans table (`DemoItem`), `DemoPaymentProvider`
+  (le fake de remote-payment gardé en cache entre les requêtes) et sa page : payer, refuser,
+  annuler, revenir sans décider. Les six cas de la démo passent.
+
+Reste, non demandé pour l'instant :
+
+- scénarios symfony-testing des parcours payeur / admin ;
+- l'étape de paiement dans un tunnel (avec symfony-cart-ds) ; la démo des tunnels garde son
+  paiement simulé à elle, sans symfony-payment ;
+- Mercure (symfony-live) pour la page de retour, à la place de l'interrogation.
