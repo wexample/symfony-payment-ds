@@ -1,0 +1,43 @@
+{#- Where a payment stands, on the page it comes back to — the return page of
+    payment-ds, a tunnel's last step —, from PaymentCheckoutService::
+    describeOutcome(): the outcome once known; the provider's form while its
+    payer has to confirm it; how to pay by hand when that was chosen; the
+    wait, read again until the provider has spoken. -#}
+{%- set common = 'WexampleSymfonyPaymentDsBundle.common.payment::outcome.' -%}
+{%- set status = payment.status.value -%}
+{%- set amount = payment.amount|price(payment.currencyCode, app.request.locale) -%}
+
+{%- if payment.status.paid -%}
+    {{ message_success((common ~ 'succeeded.title') | trans, (common ~ 'succeeded.body') | trans({ '%amount%': amount })) }}
+{%- elseif status == 'failed' -%}
+    {{ message_error((common ~ 'failed.title') | trans, payment.failureMessage ?: (common ~ 'failed.body') | trans) }}
+{%- elseif status == 'canceled' -%}
+    {{ message_warning((common ~ 'canceled.title') | trans, (common ~ 'canceled.body') | trans) }}
+{%- elseif confirmation and status != 'processing' -%}
+    <section class="block block--card">
+        <div class="block--title">
+            <span class="block--title-leading">{{ icon('ph:bold/credit-card') }}</span>
+            <span class="block--title-label">{{ (common ~ 'confirm.title') | trans }}</span>
+            <span class="block--title-trailing">{{ amount }}</span>
+        </div>
+        <div class="block--body">
+            {{ vue(render_pass, confirmation.component, confirmation.props) }}
+        </div>
+    </section>
+{%- elseif manual -%}
+    {{ message_info((common ~ 'manual.title') | trans, (common ~ 'manual.body') | trans({ '%amount%': amount })) }}
+    {%- if payment.method == 'transfer' and bank_transfer.iban -%}
+        <section class="block block--padded">
+            {{ properties([
+                { key: (common ~ 'transfer.holder') | trans, value: bank_transfer.holder ?: '—' },
+                { key: (common ~ 'transfer.iban') | trans, value: bank_transfer.iban, break: true },
+                { key: (common ~ 'transfer.bic') | trans, value: bank_transfer.bic ?: '—' },
+                { key: (common ~ 'transfer.amount') | trans, value: amount },
+                { key: (common ~ 'transfer.reference') | trans, value: payment.id, break: true },
+            ], { columns: true }) }}
+        </section>
+    {%- endif -%}
+{%- else -%}
+    {{ message_info((common ~ 'waiting.title') | trans, (common ~ 'waiting.body') | trans) }}
+    {{ vue(render_pass, '@WexampleSymfonyPaymentDsBundle/components/payment-status', { statusUrl: status_url, status: status }) }}
+{%- endif -%}

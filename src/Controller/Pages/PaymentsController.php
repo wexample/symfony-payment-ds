@@ -2,24 +2,21 @@
 
 namespace Wexample\SymfonyPaymentDs\Controller\Pages;
 
-use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Symfony\Component\Routing\Requirement\Requirement;
 use Wexample\SymfonyHelpers\Controller\AbstractController;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
-use Wexample\SymfonyPayment\Class\ManualPaymentGateway;
 use Wexample\SymfonyPayment\Entity\Payment;
 use Wexample\SymfonyPayment\Repository\PaymentRepository;
 use Wexample\SymfonyPayment\Service\PayableRegistry;
 use Wexample\SymfonyPayment\Service\PaymentAccessService;
 use Wexample\SymfonyPaymentDs\Service\FormProcessor\PaymentMethodFormProcessor;
+use Wexample\SymfonyPaymentDs\Service\PaymentCheckoutService;
 use Wexample\SymfonyPaymentDs\Traits\SymfonyPaymentDsBundleClassTrait;
-use Wexample\SymfonyRemotePayment\Service\PaymentProviderRegistry;
 
 /**
  * The payer's side: paying something, waiting for the outcome, and their
@@ -45,10 +42,6 @@ final class PaymentsController extends AbstractPagesController
 
     final public const string ROUTE_RECEIPT = 'receipt';
 
-    final public const string ROUTE_RETURN_NAME = 'payments_return';
-
-    /** Back from a provider's form in the browser: the outcome is now awaited. */
-    final public const string PARAMETER_CONFIRMED = 'confirmed';
 
     #[Route(path: '', name: self::ROUTE_INDEX)]
     #[IsGranted('IS_AUTHENTICATED')]
@@ -86,43 +79,21 @@ final class PaymentsController extends AbstractPagesController
         PaymentRepository $repository,
         PaymentAccessService $access,
         PayableRegistry $payables,
-        PaymentProviderRegistry $providers,
-        #[Autowire(param: 'wexample_symfony_payment_ds.bank_transfer')]
-        array $bankTransfer,
+        PaymentCheckoutService $checkout,
     ): Response {
         $payment = $repository->find($id);
-        $token = $request->query->getString('token');
 
-        if (! $payment || ! $access->isTokenValid($payment, $token)) {
+        if (! $payment || ! $access->isTokenValid($payment, $request->query->getString('token'))) {
             throw $this->createNotFoundException();
         }
 
         $payable = $payables->resolve($payment);
 
-        // A payment its payer confirms in the browser, not confirmed yet: the
-        // provider's form, which sends them back here once done — marked
-        // `confirmed`, the page then waiting for the outcome.
-        $confirming = $payment->getProvider() && $payment->getClientSecret() && $payment->getStatus()->isOpen()
-            && ! $request->query->has(self::PARAMETER_CONFIRMED)
-            ? $providers->findBrowserConfirmation($payment->getProvider())
-            : null;
-
-        return $this->renderPage(self::ROUTE_RETURN, [
-            'confirmation' => $confirming ? [
-                'component' => $confirming->getBrowserConfirmationComponent(),
-                'props' => $confirming->getBrowserConfirmationOptions() + [
-                    'clientSecret' => $payment->getClientSecret(),
-                    'returnUrl' => $this->generateUrl(self::ROUTE_RETURN_NAME, [
-                        'id' => $id,
-                        'token' => $token,
-                        self::PARAMETER_CONFIRMED => 1,
-                    ], UrlGeneratorInterface::ABSOLUTE_URL),
-                ],
-            ] : null,
-            'payment' => $payment,
-            'manual' => ManualPaymentGateway::NAME === $payment->getProvider(),
-            'bank_transfer' => $bankTransfer,
-            'status_url' => $this->generateUrl('payment_status', ['id' => $id, 'token' => $token]),
+        return $this->renderPage(self::ROUTE_RETURN, $checkout->describeOutcome(
+            $payment,
+            $checkout->getReturnUrl($payment),
+            $request->query->has(PaymentCheckoutService::PARAMETER_CONFIRMED),
+        ) + [
             // Paying again is paying the same thing afresh.
             'retry_url' => $payable ? $this->generateUrl('payments_pay', [
                 'payableType' => $payable::getPayableType(),
