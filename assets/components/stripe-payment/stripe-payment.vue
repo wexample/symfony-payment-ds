@@ -1,4 +1,5 @@
 <script>
+import Message from '@wexample/symfony-design-system/components/message/message.vue';
 import Spinner from '@wexample/symfony-design-system/components/spinner/spinner.vue';
 
 const T = 'WexampleSymfonyPaymentDsBundle.components.stripe-payment.stripe-payment::';
@@ -33,6 +34,7 @@ export default {
   template: '#vue-template-wexample-symfony-payment-ds-bundle-components-stripe-payment-stripe-payment',
 
   components: {
+    Message,
     Spinner
   },
 
