@@ -30,7 +30,7 @@ use Wexample\SymfonyPaymentDs\Traits\SymfonyPaymentDsBundleClassTrait;
  * The actions post with the token of the page and come back to it saying
  * what was done, or why not.
  */
-#[Route(path: '/admin/payments/', name: 'payments_admin_')]
+#[Route(path: '/admin/payments/', name: 'payment_admin_')]
 final class PaymentAdminController extends AbstractPagesController
 {
     use SymfonyPaymentDsBundleClassTrait;
@@ -39,7 +39,7 @@ final class PaymentAdminController extends AbstractPagesController
 
     final public const string ROUTE_SHOW = 'show';
 
-    final public const string ROUTE_SHOW_NAME = 'payments_admin_show';
+    final public const string ROUTE_SHOW_NAME = 'payment_admin_show';
 
     final public const string ROUTE_ACTION = 'action';
 

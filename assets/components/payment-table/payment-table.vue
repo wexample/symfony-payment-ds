@@ -67,7 +67,7 @@ export default {
           label: t('column.description'),
           format: (value) => value || t('no_description'),
           href: {
-            route: all ? 'payments_admin_show' : 'payments_show',
+            route: all ? 'payment_admin_show' : 'payments_show',
             parameters: (row) => ({ id: row.id })
           }
         },

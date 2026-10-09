@@ -13,7 +13,7 @@
     } -%}
     {%- for action in actions -%}
         <form method="post"
-              action="{{ path('payments_admin_action', { id: payment.id, action: action }) }}"
+              action="{{ path('payment_admin_action', { id: payment.id, action: action }) }}"
               data-confirm-message="{{ ('@page::confirm.' ~ action) | trans }}">
             <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
             {{ button(action_icons[action], ('@page::action.' ~ action) | trans, { type: 'submit' }) }}
@@ -49,6 +49,6 @@
     {%- include '@WexampleSymfonyPaymentDsBundle/partials/payment-refunds.html.twig' -%}
 
     <div class="cluster">
-        {{ button_link('ph:bold/arrow-left', '@page::back' | trans, path('payments_admin_index'), { class: 'button--flat' }) }}
+        {{ button_link('ph:bold/arrow-left', '@page::back' | trans, path('payment_admin_index'), { class: 'button--flat' }) }}
     </div>
 {%- endblock -%}
