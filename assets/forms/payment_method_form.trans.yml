@@ -5,6 +5,8 @@ en:
       choice:
         card:
           label: Card
+        demo_card:
+          label: Card, demo provider
         sepa_debit:
           label: Direct debit
         transfer:
@@ -25,6 +27,8 @@ fr:
       choice:
         card:
           label: Carte
+        demo_card:
+          label: Carte, prestataire de démo
         sepa_debit:
           label: Prélèvement
         transfer:

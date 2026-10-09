@@ -1,0 +1,28 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
+
+{%- block vue_require -%}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/spinner') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/message') -}}
+{%- endblock -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyPaymentDsBundle.components.stripe-payment.stripe-payment::*') }}
+{%- endblock -%}
+
+{%- block vue_body -%}
+    <div class="stack--vertical stripe-payment">
+        <div v-if="!ready && !error" class="cluster">
+            <spinner size="sm"></spinner>
+            <span class="text-secondary">[[ t('loading') ]]</span>
+        </div>
+        <div ref="element"></div>
+        <message v-if="error" type="error" compact :title="error"></message>
+        <div v-if="ready" class="cluster">
+            <button type="button" class="button button--invert" :disabled="busy" @click="pay">
+                <span class="button--icon" v-html="app.getServiceOrFail('icon').icon(busy ? 'ph:bold/circle-notch' : 'ph:bold/lock')"></span>
+                <span>[[ t('pay') ]]</span>
+            </button>
+        </div>
+    </div>
+{%- endblock -%}

@@ -1,0 +1,11 @@
+en:
+  loading: Loading the payment form…
+  pay: Pay
+  failed: The payment was not confirmed.
+  unavailable: The payment form could not be loaded.
+
+fr:
+  loading: Chargement du formulaire de paiement…
+  pay: Payer
+  failed: Le paiement n'a pas été confirmé.
+  unavailable: Le formulaire de paiement n'a pas pu être chargé.

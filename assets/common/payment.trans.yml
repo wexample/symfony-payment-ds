@@ -17,6 +17,7 @@ en:
     reason: Reason
   method:
     card: Card
+    demo_card: Card, demo provider
     sepa_debit: Direct debit
     transfer: Bank transfer
     cash: Cash
@@ -51,6 +52,7 @@ fr:
     reason: Motif
   method:
     card: Carte
+    demo_card: Carte, prestataire de démo
     sepa_debit: Prélèvement
     transfer: Virement
     cash: Espèces

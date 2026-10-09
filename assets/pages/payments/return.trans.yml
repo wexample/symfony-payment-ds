@@ -13,6 +13,8 @@ en:
   manual:
     title: Waiting for your payment
     body: "%amount% to pay by hand. The payment is marked as received once it has arrived."
+  confirm:
+    title: Your payment
   waiting:
     title: The payment is being confirmed
     body: The provider has not answered yet; this page shows its answer as soon as it comes.
@@ -41,6 +43,8 @@ fr:
   manual:
     title: En attente de votre paiement
     body: "%amount% à régler vous-même. Le paiement est marqué reçu dès qu'il est arrivé."
+  confirm:
+    title: Votre paiement
   waiting:
     title: Le paiement est en cours de confirmation
     body: Le prestataire n'a pas encore répondu ; cette page affiche sa réponse dès qu'elle arrive.

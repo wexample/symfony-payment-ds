@@ -15,6 +15,17 @@
         {{ message_error('@page::failed.title' | trans, payment.failureMessage ?: '@page::failed.body' | trans) }}
     {%- elseif status == 'canceled' -%}
         {{ message_warning('@page::canceled.title' | trans, '@page::canceled.body' | trans) }}
+    {%- elseif confirmation and status != 'processing' -%}
+        <section class="block block--card">
+            <div class="block--title">
+                <span class="block--title-leading">{{ icon('ph:bold/credit-card') }}</span>
+                <span class="block--title-label">{{ '@page::confirm.title' | trans }}</span>
+                <span class="block--title-trailing">{{ amount }}</span>
+            </div>
+            <div class="block--body">
+                {{ vue(render_pass, confirmation.component, confirmation.props) }}
+            </div>
+        </section>
     {%- elseif manual -%}
         {{ message_info('@page::manual.title' | trans, '@page::manual.body' | trans({ '%amount%': amount })) }}
         {%- if payment.method == 'transfer' and bank_transfer.iban -%}
