@@ -1,0 +1,17 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
+
+{%- block vue_require -%}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/spinner') -}}
+{%- endblock -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyPaymentDsBundle.components.payment-status.payment-status::*') }}
+{%- endblock -%}
+
+{%- block vue_body -%}
+    <div v-if="waiting" class="cluster payment-status" aria-live="polite">
+        <spinner size="sm"></spinner>
+        <span class="text-secondary">[[ long ? t('long') : t('waiting') ]]</span>
+    </div>
+{%- endblock -%}

@@ -1,0 +1,7 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/collection/table/abstract-entity-table/abstract-entity-table.vue.twig' -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyPaymentDsBundle.components.payment-table.payment-table::*') }}
+    {{ trans_js(render_pass, 'WexampleSymfonyPaymentDsBundle.common.payment::*') }}
+{%- endblock -%}

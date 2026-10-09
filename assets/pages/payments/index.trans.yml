@@ -1,0 +1,9 @@
+en:
+  page_title: My payments
+  page_icon: ph:bold/receipt
+  intro: What you paid, or tried to pay, and where each payment stands.
+
+fr:
+  page_title: Mes paiements
+  page_icon: ph:bold/receipt
+  intro: Ce que vous avez payé, ou tenté de payer, et où en est chaque paiement.

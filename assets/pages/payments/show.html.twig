@@ -1,0 +1,25 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+{%- set page_title = payment.description ?: ('WexampleSymfonyPaymentDsBundle.common.payment::no_description' | trans) -%}
+
+{%- block page_title_actions -%}
+    {%- if payment.status.paid -%}
+        {{ button_link('ph:bold/receipt', '@page::receipt' | trans, path('payments_receipt', { id: payment.id })) }}
+    {%- endif -%}
+{%- endblock -%}
+
+{%- block page_body -%}
+    <section class="block block--padded">
+        {%- include '@WexampleSymfonyPaymentDsBundle/partials/payment-properties.html.twig' -%}
+    </section>
+
+    {%- if payment.refunds|length -%}
+        <h2>{{ '@page::refunds' | trans }}</h2>
+        {%- include '@WexampleSymfonyPaymentDsBundle/partials/payment-refunds.html.twig' -%}
+    {%- endif -%}
+
+    <div class="cluster">
+        {{ button_link('ph:bold/arrow-left', '@page::back' | trans, path('payments_index'), { class: 'button--flat' }) }}
+    </div>
+{%- endblock -%}

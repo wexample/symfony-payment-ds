@@ -1,0 +1,39 @@
+en:
+  field:
+    method:
+      label: How to pay
+      choice:
+        card:
+          label: Card
+        sepa_debit:
+          label: Direct debit
+        transfer:
+          label: Bank transfer
+        cash:
+          label: Cash
+        cheque:
+          label: Cheque
+        other:
+          label: Other
+  action:
+    pay: Pay
+
+fr:
+  field:
+    method:
+      label: Moyen de paiement
+      choice:
+        card:
+          label: Carte
+        sepa_debit:
+          label: Prélèvement
+        transfer:
+          label: Virement
+        cash:
+          label: Espèces
+        cheque:
+          label: Chèque
+        other:
+          label: Autre
+  action:
+    pay: Payer

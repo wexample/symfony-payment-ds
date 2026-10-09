@@ -4,6 +4,9 @@ services:
         autoconfigure: true
         public: false
 
+    Wexample\SymfonyPaymentDs\:
+        resource: '../../{Form,Service,Twig}'
+
     Wexample\SymfonyPaymentDs\Controller\:
         resource: '../../Controller/'
         tags: ['controller.service_arguments']

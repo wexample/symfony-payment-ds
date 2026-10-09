@@ -1,0 +1,33 @@
+{#- What a payment is, the same on the payer's page and on the administration's:
+    for what, how much and how, where it stands, and when. `admin` adds who
+    paid and the provider's own words for it. -#}
+{%- set common = 'WexampleSymfonyPaymentDsBundle.common.payment::' -%}
+{%- set locale = app.request.locale -%}
+{%- set status -%}
+    {{ marker(payment_status_tone(payment.status), (common ~ 'status.' ~ payment.status.value) | trans, { compact: true }) }}
+{%- endset -%}
+{%- set items = [
+    { key: (common ~ 'field.description') | trans, value: payment.description ?: (common ~ 'no_description') | trans },
+    { key: (common ~ 'field.amount') | trans, value: payment.amount|price(payment.currencyCode, locale) },
+    { key: (common ~ 'field.method') | trans, value: (common ~ 'method.' ~ payment.method) | trans },
+    { key: (common ~ 'field.status') | trans, value: status, html: true },
+] -%}
+{%- if payment.amountRefunded > 0 -%}
+    {%- set items = items|merge([{ key: (common ~ 'field.refunded') | trans, value: payment.amountRefunded|price(payment.currencyCode, locale) }]) -%}
+{%- endif -%}
+{%- if payment.failureMessage -%}
+    {%- set items = items|merge([{ key: (common ~ 'field.failure') | trans, value: payment.failureMessage }]) -%}
+{%- endif -%}
+{%- set items = items|merge([
+    { key: (common ~ 'field.date_created') | trans, value: date_display(payment.dateCreated, 'date_time_short'), html: true },
+    { key: (common ~ 'field.date_paid') | trans, value: payment.datePaid ? date_display(payment.datePaid, 'date_time_short') : '—', html: true },
+]) -%}
+{%- if admin|default(false) -%}
+    {%- set items = items|merge([
+        { key: (common ~ 'field.customer') | trans, value: payment.customerEmail ?: '—' },
+        { key: (common ~ 'field.provider') | trans, value: payment.provider ?: '—' },
+        { key: (common ~ 'field.provider_reference') | trans, value: payment.providerReference ?: '—', break: true },
+        { key: (common ~ 'field.payable') | trans, value: payment.payableType ? payment.payableType ~ ' · ' ~ payment.payableId : '—', break: true },
+    ]) -%}
+{%- endif -%}
+{{ properties(items, { columns: true }) }}

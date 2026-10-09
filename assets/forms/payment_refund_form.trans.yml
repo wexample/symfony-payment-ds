@@ -1,0 +1,17 @@
+en:
+  field:
+    amount:
+      label: Amount to refund
+    reason:
+      label: Reason
+  action:
+    refund: Refund
+
+fr:
+  field:
+    amount:
+      label: Montant à rembourser
+    reason:
+      label: Motif
+  action:
+    refund: Rembourser

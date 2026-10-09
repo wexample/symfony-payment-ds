@@ -11,6 +11,11 @@ class WexampleSymfonyPaymentDsExtension extends AbstractWexampleSymfonyExtension
         array $configs,
         ContainerBuilder $container
     ): void {
+        $config = $this->processConfiguration(new Configuration(), $configs);
+
+        $container->setParameter('wexample_symfony_payment_ds.methods', $config['methods']);
+        $container->setParameter('wexample_symfony_payment_ds.bank_transfer', $config['bank_transfer']);
+
         $this->loadConfig(
             __DIR__,
             $container

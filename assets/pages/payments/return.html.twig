@@ -1,0 +1,47 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+
+{#- Where the payer comes back to, from the provider or from the choice of a
+    method: the outcome once known, the wait while it is not — read again until
+    the provider has spoken —, and how to pay by hand when that was chosen. -#}
+{%- block page_body -%}
+    {%- set status = payment.status.value -%}
+    {%- set amount = payment.amount|price(payment.currencyCode, app.request.locale) -%}
+
+    {%- if status == 'succeeded' or payment.status.paid -%}
+        {{ message_success('@page::succeeded.title' | trans, '@page::succeeded.body' | trans({ '%amount%': amount })) }}
+    {%- elseif status == 'failed' -%}
+        {{ message_error('@page::failed.title' | trans, payment.failureMessage ?: '@page::failed.body' | trans) }}
+    {%- elseif status == 'canceled' -%}
+        {{ message_warning('@page::canceled.title' | trans, '@page::canceled.body' | trans) }}
+    {%- elseif manual -%}
+        {{ message_info('@page::manual.title' | trans, '@page::manual.body' | trans({ '%amount%': amount })) }}
+        {%- if payment.method == 'transfer' and bank_transfer.iban -%}
+            <section class="block block--padded">
+                {{ properties([
+                    { key: '@page::transfer.holder' | trans, value: bank_transfer.holder ?: '—' },
+                    { key: '@page::transfer.iban' | trans, value: bank_transfer.iban, break: true },
+                    { key: '@page::transfer.bic' | trans, value: bank_transfer.bic ?: '—' },
+                    { key: '@page::transfer.amount' | trans, value: amount },
+                    { key: '@page::transfer.reference' | trans, value: payment.id, break: true },
+                ], { columns: true }) }}
+            </section>
+        {%- endif -%}
+    {%- else -%}
+        {{ message_info('@page::waiting.title' | trans, '@page::waiting.body' | trans) }}
+        {{ vue(render_pass, '@WexampleSymfonyPaymentDsBundle/components/payment-status', { statusUrl: status_url, status: status }) }}
+    {%- endif -%}
+
+    <div class="cluster">
+        {%- if status in ['failed', 'canceled'] and retry_url -%}
+            {{ button_link('ph:bold/arrow-clockwise', '@page::retry' | trans, retry_url, { class: 'button--invert' }) }}
+        {%- endif -%}
+        {%- if owned -%}
+            {%- if payment.status.paid -%}
+                {{ button_link('ph:bold/receipt', '@page::receipt' | trans, path('payments_receipt', { id: payment.id })) }}
+            {%- endif -%}
+            {{ button_link('ph:bold/list', '@page::payments' | trans, path('payments_index'), { class: 'button--flat' }) }}
+        {%- endif -%}
+    </div>
+{%- endblock -%}

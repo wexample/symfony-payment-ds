@@ -1,0 +1,21 @@
+en:
+  no_description: Payment
+  column:
+    date: Date
+    description: For
+    customer: Payer
+    amount: Amount
+    method: Method
+    provider: Provider
+    status: Status
+
+fr:
+  no_description: Paiement
+  column:
+    date: Date
+    description: Pour
+    customer: Payeur
+    amount: Montant
+    method: Moyen
+    provider: Prestataire
+    status: Statut

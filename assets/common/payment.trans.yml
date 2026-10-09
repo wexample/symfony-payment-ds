@@ -1,0 +1,67 @@
+en:
+  no_description: Payment
+  no_refund: No refund.
+  field:
+    description: For
+    amount: Amount
+    method: Method
+    status: Status
+    refunded: Refunded
+    failure: Why it failed
+    date_created: Date
+    date_paid: Paid on
+    customer: Payer
+    provider: Provider
+    provider_reference: Provider's reference
+    payable: Paid object
+    reason: Reason
+  method:
+    card: Card
+    sepa_debit: Direct debit
+    transfer: Bank transfer
+    cash: Cash
+    cheque: Cheque
+    other: Other
+  status:
+    created: Created
+    pending: Pending
+    processing: Processing
+    succeeded: Paid
+    failed: Failed
+    canceled: Canceled
+    partially_refunded: Partly refunded
+    refunded: Refunded
+
+fr:
+  no_description: Paiement
+  no_refund: Aucun remboursement.
+  field:
+    description: Pour
+    amount: Montant
+    method: Moyen
+    status: Statut
+    refunded: Remboursé
+    failure: Raison de l'échec
+    date_created: Date
+    date_paid: Payé le
+    customer: Payeur
+    provider: Prestataire
+    provider_reference: Référence du prestataire
+    payable: Objet payé
+    reason: Motif
+  method:
+    card: Carte
+    sepa_debit: Prélèvement
+    transfer: Virement
+    cash: Espèces
+    cheque: Chèque
+    other: Autre
+  status:
+    created: Créé
+    pending: En attente
+    processing: En cours
+    succeeded: Payé
+    failed: Échoué
+    canceled: Annulé
+    partially_refunded: Remboursé en partie
+    refunded: Remboursé

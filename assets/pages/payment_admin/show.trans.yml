@@ -1,0 +1,49 @@
+en:
+  page_title: Payment
+  page_icon: ph:bold/bank
+  action:
+    synchronize: Read again from the provider
+    confirm: Mark as received
+    cancel: Cancel
+  confirm:
+    synchronize: Read this payment again from its provider?
+    confirm: Mark this payment as received? Do it once the money has arrived.
+    cancel: Cancel this payment? The payer will have to pay again.
+  done:
+    synchronize: The payment was read again from its provider.
+    confirm: The payment is marked as received.
+    cancel: The payment is canceled.
+    refund: The refund is done.
+  refused:
+    synchronize: The provider could not be read.
+    confirm: The payment could not be marked as received.
+    cancel: The payment could not be canceled.
+  refund:
+    title: Refund
+  refunds: Refunds
+  back: Payments
+
+fr:
+  page_title: Paiement
+  page_icon: ph:bold/bank
+  action:
+    synchronize: Relire chez le prestataire
+    confirm: Marquer reçu
+    cancel: Annuler
+  confirm:
+    synchronize: Relire ce paiement chez son prestataire ?
+    confirm: Marquer ce paiement comme reçu ? À faire une fois l'argent arrivé.
+    cancel: Annuler ce paiement ? Le payeur devra payer à nouveau.
+  done:
+    synchronize: Le paiement a été relu chez son prestataire.
+    confirm: Le paiement est marqué reçu.
+    cancel: Le paiement est annulé.
+    refund: Le remboursement est fait.
+  refused:
+    synchronize: Le prestataire n'a pas pu être lu.
+    confirm: Le paiement n'a pas pu être marqué reçu.
+    cancel: Le paiement n'a pas pu être annulé.
+  refund:
+    title: Rembourser
+  refunds: Remboursements
+  back: Paiements

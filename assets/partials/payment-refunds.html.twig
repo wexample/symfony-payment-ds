@@ -1,0 +1,19 @@
+{#- The refunds of a payment, oldest first: how much, when, why. -#}
+{%- set common = 'WexampleSymfonyPaymentDsBundle.common.payment::' -%}
+{%- if payment.refunds|length -%}
+    {{ data_table(
+        [
+            { key: 'date', label: (common ~ 'field.date_created') | trans },
+            { key: 'amount', label: (common ~ 'field.amount') | trans, align: 'right' },
+            { key: 'reason', label: (common ~ 'field.reason') | trans },
+        ],
+        payment.refunds|sort((a, b) => a.dateCreated <=> b.dateCreated)|map(refund => {
+            date: refund.dateCreated|date('Y-m-d H:i'),
+            amount: refund.amount|price(payment.currencyCode, app.request.locale),
+            reason: refund.reason ?: '—',
+        }),
+        { fill: true }
+    ) }}
+{%- else -%}
+    <p class="fallback">{{ (common ~ 'no_refund') | trans }}</p>
+{%- endif -%}

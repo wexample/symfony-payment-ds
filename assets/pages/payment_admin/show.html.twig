@@ -1,0 +1,54 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+{%- set page_title = payment.description ?: ('WexampleSymfonyPaymentDsBundle.common.payment::no_description' | trans) -%}
+
+{#- One payment, and what can be done to it: the actions where it stands, each
+    posting with the token of the page and asking first, and its refund. -#}
+{%- block page_title_actions -%}
+    {%- set action_icons = {
+        synchronize: 'ph:bold/arrows-clockwise',
+        confirm: 'ph:bold/check-circle',
+        cancel: 'ph:bold/x-circle',
+    } -%}
+    {%- for action in actions -%}
+        <form method="post"
+              action="{{ path('payments_admin_action', { id: payment.id, action: action }) }}"
+              data-confirm-message="{{ ('@page::confirm.' ~ action) | trans }}">
+            <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
+            {{ button(action_icons[action], ('@page::action.' ~ action) | trans, { type: 'submit' }) }}
+        </form>
+    {%- endfor -%}
+{%- endblock -%}
+
+{%- block page_body -%}
+    {%- if done -%}
+        {{ message_success(('@page::done.' ~ done) | trans) }}
+    {%- endif -%}
+    {%- if refused -%}
+        {{ message_warning(('@page::refused.' ~ refused) | trans) }}
+    {%- endif -%}
+
+    <section class="block block--padded">
+        {%- include '@WexampleSymfonyPaymentDsBundle/partials/payment-properties.html.twig' with { admin: true } -%}
+    </section>
+
+    {%- if payment_refund_form -%}
+        <section class="block block--card">
+            <div class="block--title">
+                <span class="block--title-leading">{{ icon('ph:bold/arrow-u-up-left') }}</span>
+                <span class="block--title-label">{{ '@page::refund.title' | trans }}</span>
+            </div>
+            <div class="block--body">
+                {{ form_load(render_pass, payment_refund_form, '@WexampleSymfonyPaymentDsBundle/forms/payment_refund_form.html.twig') }}
+            </div>
+        </section>
+    {%- endif -%}
+
+    <h2>{{ '@page::refunds' | trans }}</h2>
+    {%- include '@WexampleSymfonyPaymentDsBundle/partials/payment-refunds.html.twig' -%}
+
+    <div class="cluster">
+        {{ button_link('ph:bold/arrow-left', '@page::back' | trans, path('payments_admin_index'), { class: 'button--flat' }) }}
+    </div>
+{%- endblock -%}
