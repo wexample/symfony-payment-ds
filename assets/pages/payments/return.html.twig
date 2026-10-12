@@ -1,6 +1,13 @@
 {%- extends '@front/layouts/private/layout.html.twig' -%}
 
 {%- set page_show_title = true -%}
+{%- set page_trail = owned ? 'back' : null -%}
+
+{%- block page_title_actions -%}
+    {%- if owned and payment.status.paid -%}
+        {{ button_target('ph:bold/receipt', '@page::receipt' | trans, path('payments_receipt', { id: payment.id }), 'modal') }}
+    {%- endif -%}
+{%- endblock -%}
 
 {#- Where the payer comes back to, from the provider or from the choice of a
     method: the outcome once known, the wait while it is not — read again until
@@ -12,12 +19,6 @@
     <div class="cluster">
         {%- if status in ['failed', 'canceled'] and retry_url -%}
             {{ button_link('ph:bold/arrow-clockwise', '@page::retry' | trans, retry_url, { class: 'button--invert' }) }}
-        {%- endif -%}
-        {%- if owned -%}
-            {%- if payment.status.paid -%}
-                {{ button_link('ph:bold/receipt', '@page::receipt' | trans, path('payments_receipt', { id: payment.id })) }}
-            {%- endif -%}
-            {{ button_link('ph:bold/list', '@page::payments' | trans, path('payments_index'), { class: 'button--flat' }) }}
         {%- endif -%}
     </div>
 {%- endblock -%}

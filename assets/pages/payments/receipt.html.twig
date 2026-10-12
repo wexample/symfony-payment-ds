@@ -1,6 +1,11 @@
 {%- extends '@front/layouts/private/layout.html.twig' -%}
 
 {%- set page_show_title = true -%}
+{#- A page under another: the way back to it, its actions beside, on top. -#}
+{%- set page_trail = 'back' -%}
+{#- Under the payment it is the receipt of, not beside it. -#}
+{%- do breadcrumb_append_route('payments_index') -%}
+{%- do breadcrumb_append_route('payments_show', { id: payment.id }, payment.description ?: ('WexampleSymfonyPaymentDsBundle.common.payment::no_description' | trans)) -%}
 
 {#- What was paid, kept: the payment as a document, printed by the browser. -#}
 {%- block page_body -%}
@@ -12,7 +17,4 @@
             {%- include '@WexampleSymfonyPaymentDsBundle/partials/payment-refunds.html.twig' -%}
         {%- endif -%}
     </section>
-    <div class="cluster">
-        {{ button_link('ph:bold/arrow-left', '@page::back' | trans, path('payments_show', { id: payment.id }), { class: 'button--flat' }) }}
-    </div>
 {%- endblock -%}

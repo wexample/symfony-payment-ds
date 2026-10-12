@@ -3,11 +3,9 @@ en:
   page_icon: ph:bold/receipt
   heading: "Payment %reference%"
   refunds: Refunds
-  back: The payment
 
 fr:
   page_title: Reçu
   page_icon: ph:bold/receipt
   heading: "Paiement %reference%"
   refunds: Remboursements
-  back: Le paiement

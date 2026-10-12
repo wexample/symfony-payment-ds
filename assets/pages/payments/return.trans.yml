@@ -3,11 +3,9 @@ en:
   page_icon: ph:bold/credit-card
   retry: Try again
   receipt: Receipt
-  payments: My payments
 
 fr:
   page_title: Paiement
   page_icon: ph:bold/credit-card
   retry: Réessayer
   receipt: Reçu
-  payments: Mes paiements

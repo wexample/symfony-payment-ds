@@ -21,7 +21,6 @@ en:
   refund:
     title: Refund
   refunds: Refunds
-  back: Payments
 
 fr:
   page_title: Paiement
@@ -46,4 +45,3 @@ fr:
   refund:
     title: Rembourser
   refunds: Remboursements
-  back: Paiements

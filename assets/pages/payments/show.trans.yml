@@ -3,11 +3,9 @@ en:
   page_icon: ph:bold/receipt
   receipt: Receipt
   refunds: Refunds
-  back: My payments
 
 fr:
   page_title: Paiement
   page_icon: ph:bold/receipt
   receipt: Reçu
   refunds: Remboursements
-  back: Mes paiements
