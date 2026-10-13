@@ -1,6 +1,6 @@
 {
   "name": "wexample/symfony-payment-ds",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "type": "library",
   "license": "MIT",
   "description": "The interface of symfony-payment: the payment step, the return page, the payer's payments and their administration",
