@@ -1,6 +1,6 @@
 # symfony-payment-ds
 
-Version: 2.0.2
+Version: 2.0.3
 
 The interface of symfony-payment: the payment step, the return page, the payer's payments and their administration
 
@@ -31,7 +31,7 @@ Visit the [Wexample Suite documentation](https://docs.wexample.com) for the comp
 - wexample/symfony-design-system: >=35.0.0
 - wexample/symfony-api: >=13.0.0
 - wexample/symfony-forms: >=12.0.0
-- wexample/symfony-money: >=6.0.0
+- wexample/symfony-money: >=7.0.0
 - wexample/symfony-payment: >=4.0.0
 
 ## Versioning & Compatibility Policy
