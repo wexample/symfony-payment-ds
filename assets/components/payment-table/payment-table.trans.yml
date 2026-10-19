@@ -41,3 +41,212 @@ ar:
     method: الطريقة
     provider: المزود
     status: الحالة
+
+hi:
+  no_description: भुगतान
+  column:
+    date: तारीख
+    description: 'के लिए'
+    customer: 'भुगतान करने वाला'
+    amount: राशि
+    method: विधि
+    provider: प्रदाता
+    status: स्थिति
+
+he:
+  no_description: תשלום
+  column:
+    date: תאריך
+    description: עבור
+    customer: משלם
+    amount: סכום
+    method: שיטה
+    provider: ספק
+    status: סטטוס
+
+fa:
+  no_description: پرداخت
+  column:
+    date: تاریخ
+    description: برای
+    customer: 'پرداخت کننده'
+    amount: مقدار
+    method: روش
+    provider: 'ارائه دهنده'
+    status: وضعیت
+
+ur:
+  no_description: ادائیگی
+  column:
+    date: تاریخ
+    description: 'کے لئے'
+    customer: 'ادائیگی کرنے والا'
+    amount: رقم
+    method: طریقہ
+    provider: 'فراہم کنندہ'
+    status: حالت
+
+ja:
+  no_description: 支払い
+  column:
+    date: 日付
+    description: 対象
+    customer: 支払者
+    amount: 金額
+    method: 方法
+    provider: 提供者
+    status: 状態
+
+ko:
+  no_description: 결제
+  column:
+    date: 날짜
+    description: 용도
+    customer: 지급자
+    amount: 금액
+    method: 방법
+    provider: 제공자
+    status: 상태
+
+bn:
+  no_description: পরিশোধ
+  column:
+    date: তারিখ
+    description: জন্য
+    customer: পেমেন্টকারী
+    amount: পরিমাণ
+    method: পদ্ধতি
+    provider: প্রদানকারী
+    status: অবস্থা
+
+th:
+  no_description: การชำระเงิน
+  column:
+    date: วันที่
+    description: สำหรับ
+    customer: ผู้ชำระเงิน
+    amount: จำนวนเงิน
+    method: วิธีการ
+    provider: ผู้ให้บริการ
+    status: สถานะ
+
+de:
+  no_description: Zahlung
+  column:
+    date: Datum
+    description: Für
+    customer: Zahler
+    amount: Betrag
+    method: Methode
+    provider: Anbieter
+    status: Status
+
+fi:
+  no_description: Maksu
+  column:
+    date: Päivämäärä
+    description: Miksi
+    customer: Maksaja
+    amount: Summa
+    method: Menettely
+    provider: Palveluntarjoaja
+    status: Tila
+
+ru:
+  no_description: Оплата
+  column:
+    date: Дата
+    description: Для
+    customer: Плательщик
+    amount: Сумма
+    method: Метод
+    provider: Поставщик
+    status: Статус
+
+pl:
+  no_description: Płatność
+  column:
+    date: Data
+    description: Dla
+    customer: Płatnik
+    amount: Kwota
+    method: Metoda
+    provider: Dostawca
+    status: Status
+
+es:
+  no_description: Pago
+  column:
+    date: Fecha
+    description: Para
+    customer: Pagador
+    amount: Monto
+    method: Método
+    provider: Proveedor
+    status: Estado
+
+it:
+  no_description: Pagamento
+  column:
+    date: Data
+    description: Per
+    customer: Payer
+    amount: Importo
+    method: Metodo
+    provider: Fornitore
+    status: Stato
+
+pt_BR:
+  no_description: Pagamento
+  column:
+    date: Data
+    description: Para
+    customer: Pagador
+    amount: Valor
+    method: Método
+    provider: Fornecedor
+    status: Status
+
+tr:
+  no_description: Ödeme
+  column:
+    date: Tarih
+    description: Açıklama
+    customer: Ödeyen
+    amount: Tutar
+    method: Yöntem
+    provider: Sağlayıcı
+    status: Durum
+
+vi:
+  no_description: 'Thanh toán'
+  column:
+    date: Ngày
+    description: Cho
+    customer: 'Người trả tiền'
+    amount: 'Số tiền'
+    method: 'Phương thức'
+    provider: 'Nhà cung cấp'
+    status: 'Trạng thái'
+
+id:
+  no_description: Pembayaran
+  column:
+    date: Tanggal
+    description: Untuk
+    customer: Pembayar
+    amount: Jumlah
+    method: Metode
+    provider: Penyedia
+    status: Status
+
+nl:
+  no_description: Betaling
+  column:
+    date: Datum
+    description: Voor
+    customer: Betaler
+    amount: Bedrag
+    method: Methode
+    provider: Leverancier
+    status: Status

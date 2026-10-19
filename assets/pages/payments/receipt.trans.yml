@@ -21,3 +21,117 @@ ar:
   page_icon: 'ph:bold/receipt'
   heading: 'الدفع %reference%'
   refunds: 'المبالغ المستردة'
+
+hi:
+  page_title: रसीद
+  page_icon: 'ph:bold/receipt'
+  heading: 'भुगतान %reference%'
+  refunds: रिफंड
+
+he:
+  page_title: קבלה
+  page_icon: 'ph:bold/receipt'
+  heading: 'תשלום %reference%'
+  refunds: החזרים
+
+fa:
+  page_title: صورتحساب
+  page_icon: 'ph:bold/receipt'
+  heading: 'پرداخت %reference%'
+  refunds: استردادها
+
+ur:
+  page_title: رسید
+  page_icon: 'ph:bold/receipt'
+  heading: 'ادائیگی %reference%'
+  refunds: واپسی
+
+ja:
+  page_title: 領収書
+  page_icon: 'ph:bold/receipt'
+  heading: '支払い %reference%'
+  refunds: 払い戻し
+
+ko:
+  page_title: 영수증
+  page_icon: 'ph:bold/receipt'
+  heading: '결제 %reference%'
+  refunds: 환불
+
+bn:
+  page_title: রসিদ
+  page_icon: 'ph:bold/receipt'
+  heading: 'পেমেন্ট %reference%'
+  refunds: SAME
+
+th:
+  page_title: ใบเสร็จ
+  page_icon: 'ph:bold/receipt'
+  heading: 'การชำระเงิน %reference%'
+  refunds: การคืนเงิน
+
+de:
+  page_title: Quittung
+  page_icon: 'ph:bold/receipt'
+  heading: 'Zahlung %reference%'
+  refunds: Rückerstattungen
+
+fi:
+  page_title: Kuitti
+  page_icon: 'ph:bold/receipt'
+  heading: 'Maksu %reference%'
+  refunds: Palautukset
+
+ru:
+  page_title: Чек
+  page_icon: 'ph:bold/receipt'
+  heading: 'Оплата %reference%'
+  refunds: Возвраты
+
+pl:
+  page_title: Paragon
+  page_icon: 'ph:bold/receipt'
+  heading: 'Płatność %reference%'
+  refunds: 'Zwracane kwoty'
+
+es:
+  page_title: Recibo
+  page_icon: 'ph:bold/receipt'
+  heading: 'Pago %reference%'
+  refunds: Reembolsos
+
+it:
+  page_title: Ricevuta
+  page_icon: 'ph:bold/receipt'
+  heading: 'Pagamento %reference%'
+  refunds: Rimborsi
+
+pt_BR:
+  page_title: Recibo
+  page_icon: 'ph:bold/receipt'
+  heading: 'Pagamento %reference%'
+  refunds: Reembolsos
+
+tr:
+  page_title: Fatura
+  page_icon: 'ph:bold/receipt'
+  heading: 'Ödeme %reference%'
+  refunds: İade
+
+vi:
+  page_title: 'Biên nhận'
+  page_icon: 'ph:bold/receipt'
+  heading: 'Thanh toán %reference%'
+  refunds: 'Hoàn tiền'
+
+id:
+  page_title: Struk
+  page_icon: 'ph:bold/receipt'
+  heading: 'Pembayaran %reference%'
+  refunds: SAME
+
+nl:
+  page_title: Ontvangstbewijs
+  page_icon: 'ph:bold/receipt'
+  heading: 'Betaling %reference%'
+  refunds: Terugbetalingen

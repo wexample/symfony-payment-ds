@@ -17,3 +17,98 @@ ar:
   page_title: مدفوعاتي
   page_icon: 'ph:bold/receipt'
   intro: 'ما دفعته، أو حاولت دفعه، ومكانة كل دفعة.'
+
+hi:
+  page_title: 'मेरे भुगतान'
+  page_icon: 'ph:bold/receipt'
+  intro: 'आपने क्या भुगतान किया, या भुगतान करने की कोशिश की, और प्रत्येक भुगतान की स्थिति क्या है।'
+
+he:
+  page_title: 'תשלומים שלי'
+  page_icon: 'ph:bold/receipt'
+  intro: 'מה ששילמת, או ניסית לשלם, ואיפה כל תשלום עומד.'
+
+fa:
+  page_title: 'پرداخت‌های من'
+  page_icon: 'ph:bold/receipt'
+  intro: 'آنچه پرداخت کرده‌اید یا سعی در پرداخت آن داشته‌اید و وضعیت هر پرداخت.'
+
+ur:
+  page_title: 'میری ادائیگیاں'
+  page_icon: 'ph:bold/receipt'
+  intro: 'آپ نے کیا ادائیگی کی، یا ادائیگی کرنے کی کوشش کی، اور ہر ادائیگی کی حیثیت کیا ہے۔'
+
+ja:
+  page_title: 私の支払い
+  page_icon: 'ph:bold/receipt'
+  intro: 支払ったもの、または支払おうとしたもの、各支払いの状況。
+
+ko:
+  page_title: '내 결제'
+  page_icon: 'ph:bold/receipt'
+  intro: '당신이 지불했거나 지불을 시도한 내역과 각 결제의 상태입니다.'
+
+bn:
+  page_title: 'আমার পেমেন্টস'
+  page_icon: 'ph:bold/receipt'
+  intro: 'আপনি কী পরিশোধ করেছেন, বা পরিশোধ করার চেষ্টা করেছেন, এবং প্রতিটি পেমেন্টের অবস্থা কী।'
+
+th:
+  page_title: การชำระเงินของฉัน
+  page_icon: 'ph:bold/receipt'
+  intro: 'สิ่งที่คุณชำระเงิน หรือพยายามชำระเงิน และสถานะของการชำระเงินแต่ละรายการ'
+
+de:
+  page_title: 'Meine Zahlungen'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Was Sie bezahlt haben oder zu bezahlen versucht haben und wo jede Zahlung steht.'
+
+fi:
+  page_title: 'Omat maksuni'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Mitä olet maksanut tai yritit maksaa, ja missä vaiheessa kukin maksu on.'
+
+ru:
+  page_title: 'Мои платежи'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Что вы оплатили или пытались оплатить и на каком этапе находится каждый платеж.'
+
+pl:
+  page_title: 'Moje płatności'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Co zapłaciłeś, lub próbowałeś zapłacić, oraz na jakim etapie znajduje się każda płatność.'
+
+es:
+  page_title: 'Mis pagos'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Lo que pagaste, o intentaste pagar, y el estado de cada pago.'
+
+it:
+  page_title: 'I miei pagamenti'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Cosa hai pagato, o tentato di pagare, e a che punto si trova ogni pagamento.'
+
+pt_BR:
+  page_title: 'Meus pagamentos'
+  page_icon: 'ph:bold/receipt'
+  intro: 'O que você pagou, ou tentou pagar, e a situação de cada pagamento.'
+
+tr:
+  page_title: Ödemelerim
+  page_icon: 'ph:bold/receipt'
+  intro: 'Ödediğiniz veya ödemeye çalıştığınız şeyler ve her ödemenin durumu.'
+
+vi:
+  page_title: 'Thanh toán của tôi'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Những gì bạn đã thanh toán, hoặc đã cố gắng thanh toán, và trạng thái của từng khoản thanh toán.'
+
+id:
+  page_title: 'Pembayaran saya'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Apa yang telah Anda bayar, atau coba bayar, dan di mana status masing-masing pembayaran.'
+
+nl:
+  page_title: 'Mijn betalingen'
+  page_icon: 'ph:bold/receipt'
+  intro: 'Wat je hebt betaald, of geprobeerd hebt te betalen, en waar elke betaling staat.'

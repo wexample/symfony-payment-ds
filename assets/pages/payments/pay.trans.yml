@@ -13,3 +13,79 @@ zh:
 ar:
   page_title: الدفع
   page_icon: 'ph:bold/credit-card'
+
+hi:
+  page_title: 'भुगतान करें'
+  page_icon: 'ph:bold/credit-card'
+
+he:
+  page_title: תשלום
+  page_icon: 'ph:bold/credit-card'
+
+fa:
+  page_title: پرداخت
+  page_icon: 'ph:bold/credit-card'
+
+ur:
+  page_title: ادائیگی
+  page_icon: 'ph:bold/credit-card'
+
+ja:
+  page_title: 支払い
+  page_icon: 'ph:bold/credit-card'
+
+ko:
+  page_title: 지불
+  page_icon: 'ph:bold/credit-card'
+
+bn:
+  page_title: পেমেন্ট
+  page_icon: 'ph:bold/credit-card'
+
+th:
+  page_title: ชำระเงิน
+  page_icon: 'ph:bold/credit-card'
+
+de:
+  page_title: Zahlen
+  page_icon: 'ph:bold/credit-card'
+
+fi:
+  page_title: Maksaa
+  page_icon: 'ph:bold/credit-card'
+
+ru:
+  page_title: Оплата
+  page_icon: 'ph:bold/credit-card'
+
+pl:
+  page_title: Zapłać
+  page_icon: 'ph:bold/credit-card'
+
+es:
+  page_title: Pagar
+  page_icon: 'ph:bold/credit-card'
+
+it:
+  page_title: Paga
+  page_icon: 'ph:bold/credit-card'
+
+pt_BR:
+  page_title: Pagar
+  page_icon: 'ph:bold/credit-card'
+
+tr:
+  page_title: Öde
+  page_icon: 'ph:bold/credit-card'
+
+vi:
+  page_title: 'Thanh toán'
+  page_icon: 'ph:bold/credit-card'
+
+id:
+  page_title: Bayar
+  page_icon: 'ph:bold/credit-card'
+
+nl:
+  page_title: Betalen
+  page_icon: 'ph:bold/credit-card'

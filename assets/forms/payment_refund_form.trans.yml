@@ -33,3 +33,174 @@ ar:
       label: السبب
   action:
     refund: استرداد
+
+hi:
+  field:
+    amount:
+      label: 'वापसी के लिए राशि'
+    reason:
+      label: कारण
+  action:
+    refund: वापसी
+
+he:
+  field:
+    amount:
+      label: 'סכום להחזר'
+    reason:
+      label: סיבה
+  action:
+    refund: החזר
+
+fa:
+  field:
+    amount:
+      label: 'مقدار بازپرداخت'
+    reason:
+      label: دلیل
+  action:
+    refund: بازپرداخت
+
+ur:
+  field:
+    amount:
+      label: 'رقم جو واپس کرنی ہے'
+    reason:
+      label: وجہ
+  action:
+    refund: 'واپس کریں'
+
+ja:
+  field:
+    amount:
+      label: 返金額
+    reason:
+      label: 理由
+  action:
+    refund: 返金
+
+ko:
+  field:
+    amount:
+      label: '환불 금액'
+    reason:
+      label: 사유
+  action:
+    refund: 환불
+
+bn:
+  field:
+    amount:
+      label: 'ফিরতি পরিমাণ'
+    reason:
+      label: কারণ
+  action:
+    refund: Refund
+
+th:
+  field:
+    amount:
+      label: จำนวนเงินที่คืน
+    reason:
+      label: เหตุผล
+  action:
+    refund: คืนเงิน
+
+de:
+  field:
+    amount:
+      label: 'Betrag, der zurückerstattet werden soll'
+    reason:
+      label: Grund
+  action:
+    refund: Rückerstattung
+
+fi:
+  field:
+    amount:
+      label: 'Palautettavan summa'
+    reason:
+      label: Syytä
+  action:
+    refund: Palauta
+
+ru:
+  field:
+    amount:
+      label: 'Сумма возврата'
+    reason:
+      label: Причина
+  action:
+    refund: Возврат
+
+pl:
+  field:
+    amount:
+      label: 'Kwota zwrotu'
+    reason:
+      label: Powód
+  action:
+    refund: Zwrot
+
+es:
+  field:
+    amount:
+      label: 'Monto a reembolsar'
+    reason:
+      label: Razón
+  action:
+    refund: Reembolsar
+
+it:
+  field:
+    amount:
+      label: 'Importo da rimborsare'
+    reason:
+      label: Motivo
+  action:
+    refund: Rimborsa
+
+pt_BR:
+  field:
+    amount:
+      label: 'Valor a ser reembolsado'
+    reason:
+      label: Motivo
+  action:
+    refund: Reembolsar
+
+tr:
+  field:
+    amount:
+      label: 'İade edilecek tutar'
+    reason:
+      label: Sebep
+  action:
+    refund: İade
+
+vi:
+  field:
+    amount:
+      label: 'Số tiền hoàn lại'
+    reason:
+      label: 'Lý do'
+  action:
+    refund: 'Hoàn lại'
+
+id:
+  field:
+    amount:
+      label: 'Jumlah yang akan dikembalikan'
+    reason:
+      label: Alasan
+  action:
+    refund: Refund
+
+nl:
+  field:
+    amount:
+      label: 'Te retourneren bedrag'
+    reason:
+      label: Reden
+  action:
+    refund: Terugbetalen

@@ -13,3 +13,79 @@ zh:
 ar:
   waiting: 'في انتظار رد المزود…'
   long: 'ما زلت في الانتظار. سيتم عرض الرد هنا بمجرد وصوله؛ يمكنك أيضًا العودة لاحقًا.'
+
+hi:
+  waiting: 'प्रदाता के उत्तर की प्रतीक्षा कर रहे हैं…'
+  long: 'अब भी प्रतीक्षा कर रहे हैं। उत्तर आते ही यहाँ दिखाया जाएगा; आप बाद में भी आ सकते हैं।'
+
+he:
+  waiting: 'ממתין לתשובת הספק…'
+  long: 'עדיין ממתין. התשובה תופיע כאן ברגע שתגיע; אתה יכול גם לחזור מאוחר יותר.'
+
+fa:
+  waiting: 'در حال انتظار پاسخ ارائه‌دهنده…'
+  long: 'هنوز در حال انتظار هستیم. پاسخ به محض ورود در اینجا نمایش داده خواهد شد؛ همچنین می‌توانید بعداً برگردید.'
+
+ur:
+  waiting: 'مہیا کنندہ کے جواب کا انتظار…'
+  long: 'ابھی انتظار کر رہے ہیں۔ جواب جیسے ہی آئے گا یہاں دکھایا جائے گا؛ آپ بعد میں بھی واپس آ سکتے ہیں۔'
+
+ja:
+  waiting: プロバイダーの回答をお待ちしています…
+  long: まだお待ちしています。回答が届き次第、ここに表示されます。また、後で戻ってくることもできます。
+
+ko:
+  waiting: '제공자의 응답을 기다리는 중…'
+  long: '아직 기다리는 중입니다. 응답이 도착하면 여기 표시됩니다; 나중에 다시 오셔도 됩니다.'
+
+bn:
+  waiting: 'সরবরাহকারীর উত্তর আসার অপেক্ষায়…'
+  long: 'এখনও অপেক্ষা করা হচ্ছে। উত্তর আসার সাথে সাথে এটি এখানে দেখানো হবে; আপনি পরে ফিরে আসতেও পারেন।'
+
+th:
+  waiting: กำลังรอคำตอบจากผู้ให้บริการ…
+  long: 'ยังคงรออยู่ คำตอบจะปรากฏที่นี่ทันทีที่มีมา คุณสามารถกลับมาที่นี่ในภายหลังได้เช่นกัน.'
+
+de:
+  waiting: 'Warten auf die Antwort des Anbieters…'
+  long: 'Immer noch am Warten. Die Antwort wird hier angezeigt, sobald sie eintrifft; Sie können auch später zurückkommen.'
+
+fi:
+  waiting: 'Odotetaan palveluntarjoajan vastausta…'
+  long: 'Odotetaan edelleen. Vastaus näytetään täällä heti kun se saapuu; voit myös palata myöhemmin.'
+
+ru:
+  waiting: 'Ожидание ответа от провайдера…'
+  long: 'Все еще ждем. Ответ будет показан здесь, как только он поступит; вы также можете вернуться позже.'
+
+pl:
+  waiting: 'Czekam na odpowiedź dostawcy…'
+  long: 'Wciąż czekam. Odpowiedź pojawi się tutaj, gdy tylko nadejdzie; możesz także wrócić później.'
+
+es:
+  waiting: 'Esperando la respuesta del proveedor…'
+  long: 'Aún esperando. La respuesta se mostrará aquí tan pronto como llegue; también puedes volver más tarde.'
+
+it:
+  waiting: 'In attesa della risposta del fornitore…'
+  long: 'Ancora in attesa. La risposta verrà visualizzata qui non appena arriverà; puoi anche tornare più tardi.'
+
+pt_BR:
+  waiting: 'Aguardando a resposta do provedor…'
+  long: 'Ainda aguardando. A resposta será exibida aqui assim que chegar; você também pode voltar mais tarde.'
+
+tr:
+  waiting: 'Sağlayıcının yanıtını bekliyoruz…'
+  long: 'Hala bekliyoruz. Yanıt geldiğinde buraya gösterilecektir; isterseniz daha sonra da geri dönebilirsiniz.'
+
+vi:
+  waiting: 'Đang chờ phản hồi từ nhà cung cấp…'
+  long: 'Vẫn đang chờ. Phản hồi sẽ được hiển thị ở đây ngay khi có; bạn cũng có thể quay lại sau.'
+
+id:
+  waiting: 'Menunggu jawaban dari penyedia…'
+  long: 'Masih menunggu. Jawaban akan ditampilkan di sini segera setelah diterima; Anda juga dapat kembali nanti.'
+
+nl:
+  waiting: 'Wachten op het antwoord van de leverancier…'
+  long: 'Nog steeds aan het wachten. Het antwoord wordt hier weergegeven zodra het binnenkomt; je kunt ook later terugkomen.'

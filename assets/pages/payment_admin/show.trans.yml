@@ -93,3 +93,459 @@ ar:
   refund:
     title: استرداد
   refunds: الاستردادات
+
+hi:
+  page_title: भुगतान
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'प्रदाता से फिर से पढ़ें'
+    confirm: 'प्राप्त के रूप में चिह्नित करें'
+    cancel: 'रद्द करें'
+  confirm:
+    synchronize: 'क्या आप इस भुगतान को उसके प्रदाता से फिर से पढ़ना चाहते हैं?'
+    confirm: 'क्या आप इस भुगतान को प्राप्त के रूप में चिह्नित करना चाहते हैं? इसे तब करें जब पैसे आ जाएं।'
+    cancel: 'क्या आप इस भुगतान को रद्द करना चाहते हैं? भुगतानकर्ता को फिर से भुगतान करना होगा।'
+  done:
+    synchronize: 'भुगतान को उसके प्रदाता से फिर से पढ़ा गया।'
+    confirm: 'भुगतान को प्राप्त के रूप में चिह्नित किया गया।'
+    cancel: 'भुगतान रद्द कर दिया गया।'
+    refund: 'रिफंड कर दिया गया है।'
+  refused:
+    synchronize: 'प्रदाता को पढ़ा नहीं जा सका।'
+    confirm: 'भुगतान को प्राप्त के रूप में चिह्नित नहीं किया जा सका।'
+    cancel: 'भुगतान को रद्द नहीं किया जा सका।'
+  refund:
+    title: रिफंड
+  refunds: रिफंड
+
+he:
+  page_title: תשלום
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'קרא שוב מהספק'
+    confirm: 'סמן כהתקבל'
+    cancel: ביטול
+  confirm:
+    synchronize: 'לקרוא שוב את התשלום הזה מהספק שלו?'
+    confirm: 'לסמן את התשלום כהתקבל? עשה זאת לאחר שהכסף הגיע.'
+    cancel: 'לבטל את התשלום הזה? המשלם יצטרך לשלם שוב.'
+  done:
+    synchronize: 'התשלום נקרא שוב מהספק שלו.'
+    confirm: 'התשלום סומן כהתקבל.'
+    cancel: 'התשלום בוטל.'
+    refund: 'ההחזר בוצע.'
+  refused:
+    synchronize: 'לא ניתן היה לקרוא מהספק.'
+    confirm: 'לא ניתן היה לסמן את התשלום כהתקבל.'
+    cancel: 'לא ניתן היה לבטל את התשלום.'
+  refund:
+    title: החזר
+  refunds: החזרים
+
+fa:
+  page_title: پرداخت
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'دوباره از ارائه‌دهنده بخوانید'
+    confirm: 'به عنوان دریافت شده علامت‌گذاری کنید'
+    cancel: لغو
+  confirm:
+    synchronize: 'آیا این پرداخت را دوباره از ارائه‌دهنده بخوانید؟'
+    confirm: 'آیا این پرداخت را به عنوان دریافت شده علامت‌گذاری کنید؟ این کار را وقتی که پول به حساب رسید انجام دهید.'
+    cancel: 'آیا این پرداخت را لغو کنید؟ پرداخت‌کننده باید دوباره پرداخت کند.'
+  done:
+    synchronize: 'پرداخت دوباره از ارائه‌دهنده خوانده شد.'
+    confirm: 'پرداخت به عنوان دریافت شده علامت‌گذاری شد.'
+    cancel: 'پرداخت لغو شد.'
+    refund: 'استرداد انجام شد.'
+  refused:
+    synchronize: 'امکان خواندن از ارائه‌دهنده وجود نداشت.'
+    confirm: 'امکان علامت‌گذاری این پرداخت به عنوان دریافت شده وجود نداشت.'
+    cancel: 'امکان لغو این پرداخت وجود نداشت.'
+  refund:
+    title: استرداد
+  refunds: استردادها
+
+ur:
+  page_title: ادائیگی
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'فراہم کنندہ سے دوبارہ پڑھیں'
+    confirm: 'موصول شدہ کے طور پر نشان زد کریں'
+    cancel: 'منسوخ کریں'
+  confirm:
+    synchronize: 'کیا اس ادائیگی کو اس کے فراہم کنندہ سے دوبارہ پڑھنا ہے؟'
+    confirm: 'کیا اس ادائیگی کو موصول شدہ کے طور پر نشان زد کرنا ہے؟ جب پیسہ آ جائے تو کریں۔'
+    cancel: 'کیا اس ادائیگی کو منسوخ کرنا ہے؟ ادا کرنے والے کو دوبارہ ادائیگی کرنی ہوگی۔'
+  done:
+    synchronize: 'ادائیگی کو اس کے فراہم کنندہ سے دوبارہ پڑھ لیا گیا ہے۔'
+    confirm: 'ادائیگی کو موصول شدہ کے طور پر نشان زد کر دیا گیا ہے۔'
+    cancel: 'ادائیگی منسوخ کر دی گئی ہے۔'
+    refund: 'رقم واپسی ہو گئی ہے۔'
+  refused:
+    synchronize: 'فراہم کنندہ کو نہیں پڑھا جا سکا۔'
+    confirm: 'ادائیگی کو موصول شدہ کے طور پر نشان زد نہیں کیا جا سکا۔'
+    cancel: 'ادائیگی کو منسوخ نہیں کیا جا سکا۔'
+  refund:
+    title: 'رقم واپسی'
+  refunds: 'رقم واپسی'
+
+ja:
+  page_title: 支払い
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: プロバイダーから再読み込み
+    confirm: 受領済みとしてマーク
+    cancel: キャンセル
+  confirm:
+    synchronize: この支払いをプロバイダーから再読み込みしますか？
+    confirm: この支払いを受領済みとしてマークしますか？お金が到着したら行ってください。
+    cancel: この支払いをキャンセルしますか？支払者は再度支払う必要があります。
+  done:
+    synchronize: 支払いがプロバイダーから再読み込みされました。
+    confirm: 支払いは受領済みとしてマークされました。
+    cancel: 支払いはキャンセルされました。
+    refund: 返金が完了しました。
+  refused:
+    synchronize: プロバイダーを読み込むことができませんでした。
+    confirm: 支払いを受領済みとしてマークできませんでした。
+    cancel: 支払いをキャンセルできませんでした。
+  refund:
+    title: 返金
+  refunds: 返金
+
+ko:
+  page_title: 결제
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: '제공자로부터 다시 읽기'
+    confirm: '수신된 것으로 표시'
+    cancel: 취소
+  confirm:
+    synchronize: '이 결제를 제공자로부터 다시 읽어야 합니까?'
+    confirm: '이 결제를 수신된 것으로 표시하시겠습니까? 돈이 도착한 후에 하세요.'
+    cancel: '이 결제를 취소하시겠습니까? 지불자는 다시 결제해야 합니다.'
+  done:
+    synchronize: '결제가 제공자로부터 다시 읽혔습니다.'
+    confirm: '결제가 수신된 것으로 표시되었습니다.'
+    cancel: '결제가 취소되었습니다.'
+    refund: '환불이 완료되었습니다.'
+  refused:
+    synchronize: '제공자를 읽을 수 없습니다.'
+    confirm: '결제를 수신된 것으로 표시할 수 없습니다.'
+    cancel: '결제를 취소할 수 없습니다.'
+  refund:
+    title: 환불
+  refunds: 환불
+
+bn:
+  page_title: পেমেন্ট
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'পুনরায় প্রদানকারীর থেকে পড়ুন'
+    confirm: 'গ্রহণ করা হিসেবে চিহ্নিত করুন'
+    cancel: 'বাতিল করুন'
+  confirm:
+    synchronize: 'এই পেমেন্টটি এর প্রদানকারীর থেকে আবার পড়বেন?'
+    confirm: 'এই পেমেন্টটি গ্রহণ করা হিসেবে চিহ্নিত করবেন? টাকা আসার পর এটি করুন।'
+    cancel: 'এই পেমেন্টটি বাতিল করবেন? পেমেন্টকারীকে আবার পরিশোধ করতে হবে।'
+  done:
+    synchronize: 'পেমেন্টটি এর প্রদানকারীর থেকে আবার পড়া হয়েছে।'
+    confirm: 'পেমেন্টটি গ্রহণ করা হিসেবে চিহ্নিত হয়েছে।'
+    cancel: 'পেমেন্টটি বাতিল করা হয়েছে।'
+    refund: 'রিফান্ড সম্পন্ন হয়েছে।'
+  refused:
+    synchronize: 'প্রদানকারীকে পড়া সম্ভব হয়নি।'
+    confirm: 'পেমেন্টটি গ্রহণ করা হিসেবে চিহ্নিত করা সম্ভব হয়নি।'
+    cancel: 'পেমেন্টটি বাতিল করা সম্ভব হয়নি।'
+  refund:
+    title: রিফান্ড
+  refunds: রিফান্ড
+
+th:
+  page_title: การชำระเงิน
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: อ่านอีกครั้งจากผู้ให้บริการ
+    confirm: ทำเครื่องหมายว่าได้รับแล้ว
+    cancel: ยกเลิก
+  confirm:
+    synchronize: 'อ่านการชำระเงินนี้อีกครั้งจากผู้ให้บริการหรือไม่?'
+    confirm: 'ทำเครื่องหมายการชำระเงินนี้ว่าได้รับแล้ว? ทำได้เมื่อเงินถึงแล้ว.'
+    cancel: 'ยกเลิกการชำระเงินนี้หรือไม่? ผู้จ่ายจะต้องชำระเงินใหม่.'
+  done:
+    synchronize: การชำระเงินถูกอ่านอีกครั้งจากผู้ให้บริการแล้ว.
+    confirm: การชำระเงินถูกทำเครื่องหมายว่าได้รับแล้ว.
+    cancel: การชำระเงินถูกยกเลิกแล้ว.
+    refund: การคืนเงินเสร็จสิ้นแล้ว.
+  refused:
+    synchronize: ไม่สามารถอ่านจากผู้ให้บริการได้.
+    confirm: ไม่สามารถทำเครื่องหมายการชำระเงินว่าได้รับแล้วได้.
+    cancel: ไม่สามารถยกเลิกการชำระเงินได้.
+  refund:
+    title: การคืนเงิน
+  refunds: การคืนเงิน
+
+de:
+  page_title: Zahlung
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Nochmals vom Anbieter lesen'
+    confirm: 'Als erhalten markieren'
+    cancel: Stornieren
+  confirm:
+    synchronize: 'Diese Zahlung erneut vom Anbieter lesen?'
+    confirm: 'Diese Zahlung als erhalten markieren? Mach es, sobald das Geld angekommen ist.'
+    cancel: 'Diese Zahlung stornieren? Der Zahler muss erneut zahlen.'
+  done:
+    synchronize: 'Die Zahlung wurde erneut vom Anbieter gelesen.'
+    confirm: 'Die Zahlung ist als erhalten markiert.'
+    cancel: 'Die Zahlung wurde storniert.'
+    refund: 'Die Rückerstattung wurde durchgeführt.'
+  refused:
+    synchronize: 'Der Anbieter konnte nicht gelesen werden.'
+    confirm: 'Die Zahlung konnte nicht als erhalten markiert werden.'
+    cancel: 'Die Zahlung konnte nicht storniert werden.'
+  refund:
+    title: Rückerstattung
+  refunds: Rückerstattungen
+
+fi:
+  page_title: Maksu
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Lue jälleen palveluntarjoajalta'
+    confirm: 'Merkitse vastaanotetuksi'
+    cancel: Peruuta
+  confirm:
+    synchronize: 'Lue tämä maksu jälleen sen palveluntarjoajalta?'
+    confirm: 'Merkitse tämä maksu vastaanotetuksi? Tee se, kun raha on saapunut.'
+    cancel: 'Peruuta tämä maksu? Maksaja joutuu maksamaan jälleen.'
+  done:
+    synchronize: 'Maksu luettiin jälleen sen palveluntarjoajalta.'
+    confirm: 'Maksu on merkitty vastaanotetuksi.'
+    cancel: 'Maksu on peruutettu.'
+    refund: 'Hyvitys on suoritettu.'
+  refused:
+    synchronize: 'Palveluntarjoajaa ei voitu lukea.'
+    confirm: 'Maksua ei voitu merkitä vastaanotetuksi.'
+    cancel: 'Maksua ei voitu peruuttaa.'
+  refund:
+    title: Hyvitys
+  refunds: Hyvitykset
+
+ru:
+  page_title: Оплата
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Считать снова от провайдера'
+    confirm: 'Отметить как полученное'
+    cancel: Отменить
+  confirm:
+    synchronize: 'Считать этот платеж снова от его провайдера?'
+    confirm: 'Отметить этот платеж как полученный? Сделайте это, когда деньги поступят.'
+    cancel: 'Отменить этот платеж? Плательщику придется заплатить снова.'
+  done:
+    synchronize: 'Платеж был считан снова от его провайдера.'
+    confirm: 'Платеж отмечен как полученный.'
+    cancel: 'Платеж отменен.'
+    refund: 'Возврат выполнен.'
+  refused:
+    synchronize: 'Не удалось получить данные от провайдера.'
+    confirm: 'Платеж не удалось отметить как полученный.'
+    cancel: 'Платеж не удалось отменить.'
+  refund:
+    title: Возврат
+  refunds: Возвраты
+
+pl:
+  page_title: Płatność
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Przeczytaj ponownie od dostawcy'
+    confirm: 'Oznacz jako otrzymane'
+    cancel: Anuluj
+  confirm:
+    synchronize: 'Czy przeczytać tę płatność ponownie od jej dostawcy?'
+    confirm: 'Czy oznaczyć tę płatność jako otrzymaną? Zrób to, gdy pieniądze dotrą.'
+    cancel: 'Czy anulować tę płatność? Płatnik będzie musiał zapłacić ponownie.'
+  done:
+    synchronize: 'Płatność została przeczytana ponownie od jej dostawcy.'
+    confirm: 'Płatność została oznaczona jako otrzymana.'
+    cancel: 'Płatność została anulowana.'
+    refund: 'Zwrót został zrealizowany.'
+  refused:
+    synchronize: 'Dostawca nie mógł być przeczytany.'
+    confirm: 'Płatność nie mogła być oznaczona jako otrzymana.'
+    cancel: 'Płatność nie mogła być anulowana.'
+  refund:
+    title: Zwrót
+  refunds: Zwróty
+
+es:
+  page_title: Pago
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Leer de nuevo del proveedor'
+    confirm: 'Marcar como recibido'
+    cancel: Cancelar
+  confirm:
+    synchronize: '¿Leer este pago de nuevo de su proveedor?'
+    confirm: '¿Marcar este pago como recibido? Hágalo una vez que el dinero haya llegado.'
+    cancel: '¿Cancelar este pago? El pagador tendrá que pagar de nuevo.'
+  done:
+    synchronize: 'El pago fue leído de nuevo de su proveedor.'
+    confirm: 'El pago está marcado como recibido.'
+    cancel: 'El pago está cancelado.'
+    refund: 'El reembolso está hecho.'
+  refused:
+    synchronize: 'No se pudo leer al proveedor.'
+    confirm: 'No se pudo marcar el pago como recibido.'
+    cancel: 'No se pudo cancelar el pago.'
+  refund:
+    title: Reembolso
+  refunds: Reembolsos
+
+it:
+  page_title: Pagamento
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Leggi di nuovo dal fornitore'
+    confirm: 'Segna come ricevuto'
+    cancel: Annulla
+  confirm:
+    synchronize: 'Leggere di nuovo questo pagamento dal suo fornitore?'
+    confirm: 'Segna questo pagamento come ricevuto? Fallo una volta arrivati i soldi.'
+    cancel: 'Annullare questo pagamento? Il pagatore dovrà pagare di nuovo.'
+  done:
+    synchronize: 'Il pagamento è stato letto di nuovo dal suo fornitore.'
+    confirm: 'Il pagamento è segnato come ricevuto.'
+    cancel: 'Il pagamento è annullato.'
+    refund: 'Il rimborso è completato.'
+  refused:
+    synchronize: 'Non è stato possibile leggere il fornitore.'
+    confirm: 'Il pagamento non può essere segnato come ricevuto.'
+    cancel: 'Il pagamento non può essere annullato.'
+  refund:
+    title: Rimborso
+  refunds: Rimborsi
+
+pt_BR:
+  page_title: Pagamento
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Ler novamente do provedor'
+    confirm: 'Marcar como recebido'
+    cancel: Cancelar
+  confirm:
+    synchronize: 'Ler este pagamento novamente do seu provedor?'
+    confirm: 'Marcar este pagamento como recebido? Faça isso assim que o dinheiro chegar.'
+    cancel: 'Cancelar este pagamento? O pagador terá que pagar novamente.'
+  done:
+    synchronize: 'O pagamento foi lido novamente do seu provedor.'
+    confirm: 'O pagamento está marcado como recebido.'
+    cancel: 'O pagamento foi cancelado.'
+    refund: 'O reembolso foi feito.'
+  refused:
+    synchronize: 'Não foi possível ler o provedor.'
+    confirm: 'O pagamento não pôde ser marcado como recebido.'
+    cancel: 'O pagamento não pôde ser cancelado.'
+  refund:
+    title: Reembolso
+  refunds: Reembolsos
+
+tr:
+  page_title: Ödeme
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Sağlayıcıdan tekrar oku'
+    confirm: 'Alındı olarak işaretle'
+    cancel: 'İptal et'
+  confirm:
+    synchronize: 'Bu ödemeyi sağlayıcısından tekrar mı okuyacaksınız?'
+    confirm: 'Bu ödemeyi alındı olarak mı işaretleyeceksiniz? Paranın geldiği anda yapın.'
+    cancel: 'Bu ödemeyi iptal mi edeceksiniz? Ödeyen tekrar ödeme yapmak zorunda kalacak.'
+  done:
+    synchronize: 'Ödeme sağlayıcısından tekrar okundu.'
+    confirm: 'Ödeme alındı olarak işaretlendi.'
+    cancel: 'Ödeme iptal edildi.'
+    refund: 'İade gerçekleştirildi.'
+  refused:
+    synchronize: 'Sağlayıcı okunamadı.'
+    confirm: 'Ödeme alındı olarak işaretlenemedi.'
+    cancel: 'Ödeme iptal edilemedi.'
+  refund:
+    title: İade
+  refunds: İadeler
+
+vi:
+  page_title: 'Thanh toán'
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Đọc lại từ nhà cung cấp'
+    confirm: 'Đánh dấu là đã nhận'
+    cancel: Hủy
+  confirm:
+    synchronize: 'Đọc lại thanh toán này từ nhà cung cấp của nó?'
+    confirm: 'Đánh dấu thanh toán này là đã nhận? Hãy làm điều đó khi tiền đã đến.'
+    cancel: 'Hủy thanh toán này? Người trả sẽ phải thanh toán lại.'
+  done:
+    synchronize: 'Thanh toán đã được đọc lại từ nhà cung cấp của nó.'
+    confirm: 'Thanh toán đã được đánh dấu là đã nhận.'
+    cancel: 'Thanh toán đã bị hủy.'
+    refund: 'Hoàn tiền đã được thực hiện.'
+  refused:
+    synchronize: 'Không thể đọc từ nhà cung cấp.'
+    confirm: 'Không thể đánh dấu thanh toán là đã nhận.'
+    cancel: 'Không thể hủy thanh toán.'
+  refund:
+    title: 'Hoàn tiền'
+  refunds: 'Hoàn tiền'
+
+id:
+  page_title: Pembayaran
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Baca ulang dari penyedia'
+    confirm: 'Tandai sebagai diterima'
+    cancel: Batalkan
+  confirm:
+    synchronize: 'Baca ulang pembayaran ini dari penyedianya?'
+    confirm: 'Tandai pembayaran ini sebagai diterima? Lakukan setelah uangnya tiba.'
+    cancel: 'Batalkan pembayaran ini? Pembayar harus membayar lagi.'
+  done:
+    synchronize: 'Pembayaran dibaca ulang dari penyedianya.'
+    confirm: 'Pembayaran ditandai sebagai diterima.'
+    cancel: 'Pembayaran dibatalkan.'
+    refund: 'Pengembalian dana telah dilakukan.'
+  refused:
+    synchronize: 'Penyedia tidak dapat dibaca.'
+    confirm: 'Pembayaran tidak dapat ditandai sebagai diterima.'
+    cancel: 'Pembayaran tidak dapat dibatalkan.'
+  refund:
+    title: 'Pengembalian Dana'
+  refunds: 'Pengembalian Dana'
+
+nl:
+  page_title: Betaling
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'Lees opnieuw van de provider'
+    confirm: 'Markeer als ontvangen'
+    cancel: Annuleren
+  confirm:
+    synchronize: 'Deze betaling opnieuw van de provider lezen?'
+    confirm: 'Markeer deze betaling als ontvangen? Doe dit zodra het geld is aangekomen.'
+    cancel: 'Deze betaling annuleren? De betaler moet opnieuw betalen.'
+  done:
+    synchronize: 'De betaling is opnieuw gelezen van de provider.'
+    confirm: 'De betaling is gemarkeerd als ontvangen.'
+    cancel: 'De betaling is geannuleerd.'
+    refund: 'De terugbetaling is uitgevoerd.'
+  refused:
+    synchronize: 'De provider kon niet worden gelezen.'
+    confirm: 'De betaling kon niet als ontvangen worden gemarkeerd.'
+    cancel: 'De betaling kon niet worden geannuleerd.'
+  refund:
+    title: Terugbetaling
+  refunds: Terugbetalingen

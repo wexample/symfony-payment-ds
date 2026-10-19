@@ -17,3 +17,98 @@ ar:
   page_title: المدفوعات
   page_icon: 'ph:bold/bank'
   intro: 'كل مدفوعات، تم البحث عنها وتضييقها حسب الحالة؛ كل منها يفتح على ما يمكن القيام به.'
+
+hi:
+  page_title: भुगतान
+  page_icon: 'ph:bold/bank'
+  intro: 'प्रत्येक भुगतान, स्थिति के अनुसार खोजा और संकीर्ण किया गया; प्रत्येक पर यह खुलता है कि इसके साथ क्या किया जा सकता है।'
+
+he:
+  page_title: תשלומים
+  page_icon: 'ph:bold/bank'
+  intro: 'כל תשלום, מחפש ומצומצם לפי סטטוס; כל אחד נפתח על מה שניתן לעשות איתו.'
+
+fa:
+  page_title: پرداخت‌ها
+  page_icon: 'ph:bold/bank'
+  intro: 'هر پرداختی، جستجو شده و بر اساس وضعیت محدود شده است؛ هرکدام به آنچه می‌توان با آن انجام داد باز می‌شود.'
+
+ur:
+  page_title: ادائیگیاں
+  page_icon: 'ph:bold/bank'
+  intro: 'ہر ادائیگی، حیثیت کے لحاظ سے تلاش کی گئی اور محدود کی گئی؛ ہر ایک اس پر جو کیا جا سکتا ہے، کھلتا ہے۔'
+
+ja:
+  page_title: 支払い
+  page_icon: 'ph:bold/bank'
+  intro: すべての支払いは、ステータスによって検索および絞り込まれます。それぞれは、その支払いに対して行える操作が表示されます。
+
+ko:
+  page_title: 결제
+  page_icon: 'ph:bold/bank'
+  intro: '모든 결제는 상태별로 검색 및 필터링됩니다. 각 결제는 수행할 수 있는 작업으로 열립니다.'
+
+bn:
+  page_title: পেমেন্টস
+  page_icon: 'ph:bold/bank'
+  intro: 'প্রতিটি পেমেন্ট, স্থিতি অনুসারে অনুসন্ধান করা এবং সংকীর্ণ করা হয়েছে; প্রতিটি খুললে এটি নিয়ে কি করা যাবে তা দেখা যায়।'
+
+th:
+  page_title: การชำระเงิน
+  page_icon: 'ph:bold/bank'
+  intro: 'การชำระเงินแต่ละรายการ จะถูกค้นหาและจัดกลุ่มตามสถานะ; แต่ละรายการจะเปิดขึ้นเพื่อดูสิ่งที่สามารถทำได้กับมัน.'
+
+de:
+  page_title: Zahlungen
+  page_icon: 'ph:bold/bank'
+  intro: 'Jede Zahlung, nach Status durchsucht und eingegrenzt; jede öffnet sich, um zu zeigen, was damit gemacht werden kann.'
+
+fi:
+  page_title: Maksut
+  page_icon: 'ph:bold/bank'
+  intro: 'Jokainen maksu, haettu ja rajattu tilan mukaan; jokainen avautuu siihen, mitä sille voidaan tehdä.'
+
+ru:
+  page_title: Платежи
+  page_icon: 'ph:bold/bank'
+  intro: 'Каждый платеж, отсортированный и уточненный по статусу; каждый открывает то, что можно с ним сделать.'
+
+pl:
+  page_title: Płatności
+  page_icon: 'ph:bold/bank'
+  intro: 'Każda płatność, wyszukana i zawężona według statusu; każda otwiera się na to, co można z nią zrobić.'
+
+es:
+  page_title: Pagos
+  page_icon: 'ph:bold/bank'
+  intro: 'Cada pago, buscado y filtrado por estado; cada uno se abre en lo que se puede hacer con él.'
+
+it:
+  page_title: Pagamenti
+  page_icon: 'ph:bold/bank'
+  intro: 'Ogni pagamento, cercato e filtrato per stato; ognuno si apre su cosa si può fare.'
+
+pt_BR:
+  page_title: Pagamentos
+  page_icon: 'ph:bold/bank'
+  intro: 'Cada pagamento, pesquisado e filtrado por status; cada um abre sobre o que pode ser feito.'
+
+tr:
+  page_title: Ödemeler
+  page_icon: 'ph:bold/bank'
+  intro: 'Her ödeme, duruma göre arandı ve daraltıldı; her biri üzerinde ne yapılabileceğine açılır.'
+
+vi:
+  page_title: 'Thanh toán'
+  page_icon: 'ph:bold/bank'
+  intro: 'Mỗi khoản thanh toán, được tìm kiếm và lọc theo trạng thái; mỗi khoản đều mở ra những gì có thể thực hiện được.'
+
+id:
+  page_title: Pembayaran
+  page_icon: 'ph:bold/bank'
+  intro: 'Setiap pembayaran, dicari dan dipersempit berdasarkan status; masing-masing membuka apa yang dapat dilakukan terhadapnya.'
+
+nl:
+  page_title: Betalingen
+  page_icon: 'ph:bold/bank'
+  intro: 'Elke betaling, gezocht en verfijnd op status; elke betaling opent wat er mee gedaan kan worden.'

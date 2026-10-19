@@ -21,3 +21,117 @@ ar:
   page_icon: 'ph:bold/receipt'
   receipt: إيصال
   refunds: 'المبالغ المستردة'
+
+hi:
+  page_title: भुगतान
+  page_icon: 'ph:bold/receipt'
+  receipt: रसीद
+  refunds: वापसी
+
+he:
+  page_title: תשלום
+  page_icon: 'ph:bold/receipt'
+  receipt: קבלה
+  refunds: החזרים
+
+fa:
+  page_title: پرداخت
+  page_icon: 'ph:bold/receipt'
+  receipt: رسید
+  refunds: 'برگشت وجه'
+
+ur:
+  page_title: ادائیگی
+  page_icon: 'ph:bold/receipt'
+  receipt: رسید
+  refunds: ریفنڈز
+
+ja:
+  page_title: 支払い
+  page_icon: 'ph:bold/receipt'
+  receipt: 領収書
+  refunds: 返金
+
+ko:
+  page_title: 결제
+  page_icon: 'ph:bold/receipt'
+  receipt: 영수증
+  refunds: 환불
+
+bn:
+  page_title: পেমেন্ট
+  page_icon: 'ph:bold/receipt'
+  receipt: রসিদ
+  refunds: রিফান্ড
+
+th:
+  page_title: การชำระเงิน
+  page_icon: 'ph:bold/receipt'
+  receipt: ใบเสร็จ
+  refunds: การคืนเงิน
+
+de:
+  page_title: Zahlung
+  page_icon: 'ph:bold/receipt'
+  receipt: Quittung
+  refunds: Rückerstattungen
+
+fi:
+  page_title: Maksu
+  page_icon: 'ph:bold/receipt'
+  receipt: Kuitti
+  refunds: Palautukset
+
+ru:
+  page_title: Оплата
+  page_icon: 'ph:bold/receipt'
+  receipt: Чек
+  refunds: Возвраты
+
+pl:
+  page_title: Płatność
+  page_icon: 'ph:bold/receipt'
+  receipt: Paragon
+  refunds: Zwroty
+
+es:
+  page_title: Pago
+  page_icon: 'ph:bold/receipt'
+  receipt: Recibo
+  refunds: Reembolsos
+
+it:
+  page_title: Pagamento
+  page_icon: 'ph:bold/receipt'
+  receipt: Scontrino
+  refunds: Rimborsi
+
+pt_BR:
+  page_title: Pagamento
+  page_icon: 'ph:bold/receipt'
+  receipt: Recibo
+  refunds: Reembolsos
+
+tr:
+  page_title: Ödeme
+  page_icon: 'ph:bold/receipt'
+  receipt: Fatura
+  refunds: İadeler
+
+vi:
+  page_title: 'Thanh toán'
+  page_icon: 'ph:bold/receipt'
+  receipt: 'Biên nhận'
+  refunds: 'Hoàn tiền'
+
+id:
+  page_title: Pembayaran
+  page_icon: 'ph:bold/receipt'
+  receipt: Struk
+  refunds: Pengembalian
+
+nl:
+  page_title: Betaling
+  page_icon: 'ph:bold/receipt'
+  receipt: Ontvangstbewijs
+  refunds: Terugbetalingen

@@ -21,3 +21,117 @@ ar:
   pay: ادفع
   failed: 'لم يتم تأكيد الدفع.'
   unavailable: 'لم يتمكن من تحميل نموذج الدفع.'
+
+hi:
+  loading: 'भुगतान फॉर्म लोड हो रहा है…'
+  pay: 'भुगतान करें'
+  failed: 'भुगतान की पुष्टि नहीं हुई।'
+  unavailable: 'भुगतान फॉर्म लोड नहीं किया जा सका।'
+
+he:
+  loading: 'טוען את טופס התשלום…'
+  pay: שולם
+  failed: 'התשלום לא אושר.'
+  unavailable: 'לא הצלחנו לטעון את טופס התשלום.'
+
+fa:
+  loading: 'در حال بارگذاری فرم پرداخت…'
+  pay: پرداخت
+  failed: 'پرداخت تأیید نشد.'
+  unavailable: 'فرم پرداخت بارگذاری نشد.'
+
+ur:
+  loading: 'ادائیگی کا فارم لوڈ ہو رہا ہے…'
+  pay: 'ادائیگی کریں'
+  failed: 'ادائیگی کی تصدیق نہیں ہوئی۔'
+  unavailable: 'ادائیگی کا فارم لوڈ نہیں کیا جا سکا۔'
+
+ja:
+  loading: 支払いフォームを読み込んでいます…
+  pay: 支払う
+  failed: 支払いが確認されませんでした。
+  unavailable: 支払いフォームを読み込むことができませんでした。
+
+ko:
+  loading: '결제 양식을 로딩 중…'
+  pay: 결제
+  failed: '결제가 확인되지 않았습니다.'
+  unavailable: '결제 양식을 불러올 수 없습니다.'
+
+bn:
+  loading: 'পেমেন্ট ফর্ম লোড হচ্ছে…'
+  pay: 'পেমেন্ট করুন'
+  failed: 'পেমেন্ট নিশ্চিত করা হয়নি।'
+  unavailable: 'পেমেন্ট ফর্ম লোড করা যায়নি।'
+
+th:
+  loading: กำลังโหลดแบบฟอร์มการชำระเงิน…
+  pay: ชำระเงิน
+  failed: การชำระเงินไม่ได้รับการยืนยัน.
+  unavailable: ไม่สามารถโหลดแบบฟอร์มการชำระเงินได้.
+
+de:
+  loading: 'Zahlungsformular wird geladen…'
+  pay: Zahlen
+  failed: 'Die Zahlung wurde nicht bestätigt.'
+  unavailable: 'Das Zahlungsformular konnte nicht geladen werden.'
+
+fi:
+  loading: 'Ladataan maksulomaketta…'
+  pay: Maksa
+  failed: 'Maksua ei vahvistettu.'
+  unavailable: 'Maksulomaketta ei voitu ladata.'
+
+ru:
+  loading: 'Загрузка платежной формы…'
+  pay: Оплатить
+  failed: 'Платеж не был подтвержден.'
+  unavailable: 'Платежная форма не может быть загружена.'
+
+pl:
+  loading: 'Ładowanie formularza płatności…'
+  pay: Zapłać
+  failed: 'Płatność nie została potwierdzona.'
+  unavailable: 'Nie można załadować formularza płatności.'
+
+es:
+  loading: 'Cargando el formulario de pago…'
+  pay: Pagar
+  failed: 'El pago no fue confirmado.'
+  unavailable: 'No se pudo cargar el formulario de pago.'
+
+it:
+  loading: 'Caricamento del modulo di pagamento…'
+  pay: Paga
+  failed: 'Il pagamento non è stato confermato.'
+  unavailable: 'Il modulo di pagamento non è stato caricato.'
+
+pt_BR:
+  loading: 'Carregando o formulário de pagamento…'
+  pay: Pagar
+  failed: 'O pagamento não foi confirmado.'
+  unavailable: 'O formulário de pagamento não pôde ser carregado.'
+
+tr:
+  loading: 'Ödeme formu yükleniyor…'
+  pay: Öde
+  failed: 'Ödeme onaylanmadı.'
+  unavailable: 'Ödeme formu yüklenemedi.'
+
+vi:
+  loading: 'Đang tải mẫu thanh toán…'
+  pay: 'Thanh toán'
+  failed: 'Thanh toán chưa được xác nhận.'
+  unavailable: 'Mẫu thanh toán không thể được tải.'
+
+id:
+  loading: 'Memuat formulir pembayaran…'
+  pay: Bayar
+  failed: 'Pembayaran tidak terkonfirmasi.'
+  unavailable: 'Formulir pembayaran tidak dapat dimuat.'
+
+nl:
+  loading: 'Betalingsformulier laden…'
+  pay: Betalen
+  failed: 'De betaling is niet bevestigd.'
+  unavailable: 'Het betalingsformulier kon niet worden geladen.'

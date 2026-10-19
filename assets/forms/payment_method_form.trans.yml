@@ -85,3 +85,421 @@ ar:
           label: آخر
   action:
     pay: ادفع
+
+hi:
+  field:
+    method:
+      label: 'भुगतान कैसे करें'
+      choice:
+        card:
+          label: कार्ड
+        demo_card:
+          label: 'कार्ड, डेमो प्रदाता'
+        sepa_debit:
+          label: 'प्रत्यक्ष डेबिट'
+        transfer:
+          label: 'बैंक ट्रांसफर'
+        cash:
+          label: नकद
+        cheque:
+          label: चेक
+        other:
+          label: अन्य
+  action:
+    pay: 'भुगतान करें'
+
+he:
+  field:
+    method:
+      label: 'איך לשלם'
+      choice:
+        card:
+          label: כרטיס
+        demo_card:
+          label: 'כרטיס, ספק דמו'
+        sepa_debit:
+          label: 'הוראת קבע'
+        transfer:
+          label: 'העברה בנקאית'
+        cash:
+          label: מזומן
+        cheque:
+          label: שיק
+        other:
+          label: אחר
+  action:
+    pay: שלם
+
+fa:
+  field:
+    method:
+      label: 'نحوه پرداخت'
+      choice:
+        card:
+          label: کارت
+        demo_card:
+          label: 'کارت، ارائه‌دهنده دمو'
+        sepa_debit:
+          label: 'پرداخت مستقیم'
+        transfer:
+          label: 'انتقال بانکی'
+        cash:
+          label: نقدی
+        cheque:
+          label: چک
+        other:
+          label: سایر
+  action:
+    pay: پرداخت
+
+ur:
+  field:
+    method:
+      label: 'ادائیگی کا طریقہ'
+      choice:
+        card:
+          label: کارڈ
+        demo_card:
+          label: 'کارڈ، ڈیمو فراہم کنندہ'
+        sepa_debit:
+          label: 'براہ راست ڈیبٹ'
+        transfer:
+          label: 'بینک ٹرانسفر'
+        cash:
+          label: نقد
+        cheque:
+          label: چیک
+        other:
+          label: دیگر
+  action:
+    pay: 'ادائیگی کریں'
+
+ja:
+  field:
+    method:
+      label: 支払い方法
+      choice:
+        card:
+          label: カード
+        demo_card:
+          label: カード、デモプロバイダー
+        sepa_debit:
+          label: 口座振替
+        transfer:
+          label: 銀行振込
+        cash:
+          label: 現金
+        cheque:
+          label: 小切手
+        other:
+          label: その他
+  action:
+    pay: 支払う
+
+ko:
+  field:
+    method:
+      label: '결제 방법'
+      choice:
+        card:
+          label: 카드
+        demo_card:
+          label: '카드, 데모 제공자'
+        sepa_debit:
+          label: '직접 인출'
+        transfer:
+          label: '은행 이체'
+        cash:
+          label: 현금
+        cheque:
+          label: 수표
+        other:
+          label: 기타
+  action:
+    pay: 결제하기
+
+bn:
+  field:
+    method:
+      label: 'কিভাবে পেমেন্ট করবেন'
+      choice:
+        card:
+          label: কার্ড
+        demo_card:
+          label: 'ডেমো প্রোভাইডারের কার্ড'
+        sepa_debit:
+          label: 'ডাইরেক্ট ডেবিট'
+        transfer:
+          label: 'ব্যাংক ট্রান্সফার'
+        cash:
+          label: নগদ
+        cheque:
+          label: চেক
+        other:
+          label: অন্যান্য
+  action:
+    pay: 'পেমেন্ট করুন'
+
+th:
+  field:
+    method:
+      label: วิธีการชำระเงิน
+      choice:
+        card:
+          label: บัตร
+        demo_card:
+          label: 'บัตร, ผู้ให้บริการสาธิต'
+        sepa_debit:
+          label: หักบัญชีโดยตรง
+        transfer:
+          label: โอนเงินผ่านธนาคาร
+        cash:
+          label: เงินสด
+        cheque:
+          label: เช็ค
+        other:
+          label: อื่นๆ
+  action:
+    pay: ชำระเงิน
+
+de:
+  field:
+    method:
+      label: 'Wie man bezahlt'
+      choice:
+        card:
+          label: Karte
+        demo_card:
+          label: 'Karte, Demoproduzent'
+        sepa_debit:
+          label: Lastschrift
+        transfer:
+          label: Banküberweisung
+        cash:
+          label: Bargeld
+        cheque:
+          label: Scheck
+        other:
+          label: Sonstiges
+  action:
+    pay: Zahlen
+
+fi:
+  field:
+    method:
+      label: Maksutapa
+      choice:
+        card:
+          label: Kortti
+        demo_card:
+          label: 'Kortti, demo tarjoaja'
+        sepa_debit:
+          label: Suoramaksu
+        transfer:
+          label: Pankkisiirto
+        cash:
+          label: Käteinen
+        cheque:
+          label: Sekki
+        other:
+          label: Muu
+  action:
+    pay: Maksa
+
+ru:
+  field:
+    method:
+      label: 'Как оплатить'
+      choice:
+        card:
+          label: Карточка
+        demo_card:
+          label: 'Карточка, демонстрационный провайдер'
+        sepa_debit:
+          label: 'Прямой дебет'
+        transfer:
+          label: 'Банковский перевод'
+        cash:
+          label: Наличные
+        cheque:
+          label: Чек
+        other:
+          label: Другое
+  action:
+    pay: Оплатить
+
+pl:
+  field:
+    method:
+      label: 'Jak zapłacić'
+      choice:
+        card:
+          label: Karta
+        demo_card:
+          label: 'Karta, dostawca demo'
+        sepa_debit:
+          label: 'Polecenie zapłaty'
+        transfer:
+          label: 'Przelew bankowy'
+        cash:
+          label: Gotówka
+        cheque:
+          label: Czek
+        other:
+          label: Inne
+  action:
+    pay: Zapłać
+
+es:
+  field:
+    method:
+      label: 'Cómo pagar'
+      choice:
+        card:
+          label: Tarjeta
+        demo_card:
+          label: 'Tarjeta, proveedor de demostración'
+        sepa_debit:
+          label: 'Débito directo'
+        transfer:
+          label: 'Transferencia bancaria'
+        cash:
+          label: Efectivo
+        cheque:
+          label: Cheque
+        other:
+          label: Otro
+  action:
+    pay: Pagar
+
+it:
+  field:
+    method:
+      label: 'Come pagare'
+      choice:
+        card:
+          label: Carta
+        demo_card:
+          label: 'Carta, fornitore demo'
+        sepa_debit:
+          label: 'Addebito diretto'
+        transfer:
+          label: 'Bonifico bancario'
+        cash:
+          label: Contante
+        cheque:
+          label: Assegno
+        other:
+          label: Altro
+  action:
+    pay: Paga
+
+pt_BR:
+  field:
+    method:
+      label: 'Como pagar'
+      choice:
+        card:
+          label: Cartão
+        demo_card:
+          label: 'Cartão, fornecedor de demonstração'
+        sepa_debit:
+          label: 'Débito direto'
+        transfer:
+          label: 'Transferência bancária'
+        cash:
+          label: Dinheiro
+        cheque:
+          label: Cheque
+        other:
+          label: Outro
+  action:
+    pay: Pagar
+
+tr:
+  field:
+    method:
+      label: 'Nasıl ödeme yapılır'
+      choice:
+        card:
+          label: 'Kredi Kartı'
+        demo_card:
+          label: 'Kredi Kartı, demo sağlayıcı'
+        sepa_debit:
+          label: 'Doğrudan banka tahsilatı'
+        transfer:
+          label: 'Banka havalesi'
+        cash:
+          label: Nakit
+        cheque:
+          label: Çek
+        other:
+          label: Diğer
+  action:
+    pay: Öde
+
+vi:
+  field:
+    method:
+      label: 'Cách thanh toán'
+      choice:
+        card:
+          label: Thẻ
+        demo_card:
+          label: 'Thẻ, nhà cung cấp demo'
+        sepa_debit:
+          label: 'Trả trước qua thẻ'
+        transfer:
+          label: 'Chuyển khoản ngân hàng'
+        cash:
+          label: 'Tiền mặt'
+        cheque:
+          label: Séc
+        other:
+          label: Khác
+  action:
+    pay: 'Thanh toán'
+
+id:
+  field:
+    method:
+      label: 'Cara membayar'
+      choice:
+        card:
+          label: Kartu
+        demo_card:
+          label: 'Kartu, penyedia demo'
+        sepa_debit:
+          label: 'Debit langsung'
+        transfer:
+          label: 'Transfer bank'
+        cash:
+          label: 'Uang tunai'
+        cheque:
+          label: Cek
+        other:
+          label: Lainnya
+  action:
+    pay: Bayar
+
+nl:
+  field:
+    method:
+      label: 'Hoe te betalen'
+      choice:
+        card:
+          label: Kaart
+        demo_card:
+          label: 'Kaart, demo aanbieder'
+        sepa_debit:
+          label: 'Automatische incasso'
+        transfer:
+          label: Bankoverschrijving
+        cash:
+          label: Contant
+        cheque:
+          label: Cheque
+        other:
+          label: Overig
+  action:
+    pay: Betalen

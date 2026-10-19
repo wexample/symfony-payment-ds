@@ -233,3 +233,1124 @@ ar:
       bic: BIC
       amount: المبلغ
       reference: 'المرجع الذي يجب كتابته على التحويل'
+
+hi:
+  no_description: भुगतान
+  no_refund: 'कोई रिफंड नहीं।'
+  field:
+    description: 'के लिए'
+    amount: राशि
+    method: विधि
+    status: स्थिति
+    refunded: 'रिफंड किया गया'
+    failure: 'यह क्यों असफल हुआ'
+    date_created: तारीख
+    date_paid: 'भुगतान किया गया'
+    customer: भुगतानकर्ता
+    provider: प्रदाता
+    provider_reference: 'प्रदाता का संदर्भ'
+    payable: 'भुगतान की वस्तु'
+    reason: कारण
+  method:
+    card: कार्ड
+    demo_card: 'कार्ड, डेमो प्रदाता'
+    sepa_debit: 'प्रत्यक्ष डेबिट'
+    transfer: 'बैंक ट्रांसफर'
+    cash: नकद
+    cheque: चेक
+    other: अन्य
+  status:
+    created: निर्मित
+    pending: लंबित
+    processing: प्रसंस्करण
+    succeeded: 'भुगतान किया गया'
+    failed: असफल
+    canceled: 'रद्द किया गया'
+    partially_refunded: 'आंशिक रूप से रिफंड किया गया'
+    refunded: 'रिफंड किया गया'
+  outcome:
+    succeeded:
+      title: 'भुगतान प्राप्त हुआ'
+      body: '%amount% प्राप्त हुआ। धन्यवाद।'
+    failed:
+      title: 'भुगतान असफल हुआ'
+      body: 'कुछ भी नहीं लिया गया। आप फिर से प्रयास कर सकते हैं, उसी विधि से या किसी अन्य से।'
+    canceled:
+      title: 'भुगतान रद्द कर दिया गया'
+      body: 'कुछ भी नहीं लिया गया।'
+    manual:
+      title: 'आपके भुगतान की प्रतीक्षा है'
+      body: '%amount% हाथ से भुगतान करने के लिए। भुगतान को प्राप्त किया गया माना जाएगा जब यह पहुँच जाएगा।'
+    confirm:
+      title: 'आपका भुगतान'
+    waiting:
+      title: 'भुगतान की पुष्टि की जा रही है'
+      body: 'प्रदाता ने अभी तक उत्तर नहीं दिया है; यह पृष्ठ उत्तर आने पर उसे दिखाएगा।'
+    transfer:
+      holder: 'खाता धारक'
+      iban: IBAN
+      bic: BIC
+      amount: राशि
+      reference: 'ट्रांसफर पर लिखने के लिए संदर्भ'
+
+he:
+  no_description: תשלום
+  no_refund: 'אין החזר.'
+  field:
+    description: עבור
+    amount: סכום
+    method: שיטה
+    status: סטטוס
+    refunded: הוחזר
+    failure: 'למה זה נכשל'
+    date_created: תאריך
+    date_paid: 'שולם ב'
+    customer: משלם
+    provider: ספק
+    provider_reference: 'הפניה של הספק'
+    payable: 'אובייקט ששולם'
+    reason: סיבה
+  method:
+    card: כרטיס
+    demo_card: 'כרטיס, ספק הדגמה'
+    sepa_debit: 'חיוב ישיר'
+    transfer: 'העברה בנקאית'
+    cash: מזומן
+    cheque: שיק
+    other: אחר
+  status:
+    created: נוצר
+    pending: ממתין
+    processing: בעיבוד
+    succeeded: שולם
+    failed: נכשל
+    canceled: בוטל
+    partially_refunded: 'הוחזר חלקית'
+    refunded: הוחזר
+  outcome:
+    succeeded:
+      title: 'התשלום התקבל'
+      body: '%amount% התקבל. תודה.'
+    failed:
+      title: 'התשלום נכשל'
+      body: 'לא נלקח שום דבר. תוכל לנסות שוב, באותה שיטה או בשיטה אחרת.'
+    canceled:
+      title: 'התשלום בוטל'
+      body: 'לא נלקח שום דבר.'
+    manual:
+      title: 'ממתין לתשלום שלך'
+      body: '%amount% לשלם ידנית. התשלום יסומן כהתקבל ברגע שיגיע.'
+    confirm:
+      title: 'התשלום שלך'
+    waiting:
+      title: 'התשלום מאושר'
+      body: 'הספק עדיין לא ענה; דף זה מציג את תשובתו ברגע שהיא מגיעה.'
+    transfer:
+      holder: 'מחזיק החשבון'
+      iban: IBAN
+      bic: BIC
+      amount: סכום
+      reference: 'הפניה לכתוב על ההעברה'
+
+fa:
+  no_description: پرداخت
+  no_refund: 'هیچ بازپرداختی وجود ندارد.'
+  field:
+    description: برای
+    amount: مبلغ
+    method: روش
+    status: وضعیت
+    refunded: 'بازپرداخت شده'
+    failure: 'چرا ناموفق بود'
+    date_created: تاریخ
+    date_paid: 'پرداخت شده در'
+    customer: 'پرداخت کننده'
+    provider: 'عرضه کننده'
+    provider_reference: 'ارجاع عرضه کننده'
+    payable: 'شیء پرداختی'
+    reason: دلیل
+  method:
+    card: کارت
+    demo_card: 'کارت، ارائه دهنده نمایشی'
+    sepa_debit: 'برداشت مستقیم'
+    transfer: 'انتقال بانکی'
+    cash: نقد
+    cheque: چک
+    other: سایر
+  status:
+    created: 'ایجاد شده'
+    pending: 'در حال انتظار'
+    processing: 'در حال پردازش'
+    succeeded: 'پرداخت شده'
+    failed: ناموفق
+    canceled: 'لغو شده'
+    partially_refunded: 'جزئی بازپرداخت شده'
+    refunded: 'بازپرداخت شده'
+  outcome:
+    succeeded:
+      title: 'پرداخت دریافت شد'
+      body: '%amount% دریافت شد. متشکرم.'
+    failed:
+      title: 'پرداخت ناموفق بود'
+      body: 'هیچ چیزی دریافت نشد. می‌توانید دوباره تلاش کنید، با همان روش یا روش دیگری.'
+    canceled:
+      title: 'پرداخت لغو شد'
+      body: 'هیچ چیزی دریافت نشد.'
+    manual:
+      title: 'در انتظار پرداخت شما'
+      body: '%amount% برای پرداخت دستی. پس از رسیدن، پرداخت به عنوان دریافت شده علامت‌گذاری می‌شود.'
+    confirm:
+      title: 'پرداخت شما'
+    waiting:
+      title: 'پرداخت در حال تأیید است'
+      body: 'عرضه کننده هنوز پاسخ نداده است؛ این صفحه پاسخ آن را به محض دریافت نشان می‌دهد.'
+    transfer:
+      holder: 'دارنده حساب'
+      iban: IBAN
+      bic: BIC
+      amount: مبلغ
+      reference: 'ارجاعی که باید در انتقال نوشته شود'
+
+ur:
+  no_description: ادائیگی
+  no_refund: 'کوئی واپسی نہیں۔'
+  field:
+    description: 'کے لیے'
+    amount: رقم
+    method: طریقہ
+    status: حالت
+    refunded: 'واپس کی گئی'
+    failure: 'کیوں ناکام ہوا'
+    date_created: تاریخ
+    date_paid: 'ادائیگی کی تاریخ'
+    customer: 'ادائیگی کرنے والا'
+    provider: 'فراہم کنندہ'
+    provider_reference: 'فراہم کنندہ کا حوالہ'
+    payable: 'ادائیگی کی جانے والی چیز'
+    reason: وجہ
+  method:
+    card: کارڈ
+    demo_card: 'کارڈ، ڈیمو فراہم کنندہ'
+    sepa_debit: 'براہ راست ڈیبٹ'
+    transfer: 'بینک ٹرانسفر'
+    cash: نقد
+    cheque: چیک
+    other: دیگر
+  status:
+    created: 'تخلیق کیا گیا'
+    pending: 'زیر التوا'
+    processing: 'عمل میں ہے'
+    succeeded: 'ادائیگی ہو گئی'
+    failed: ناکام
+    canceled: منسوخ
+    partially_refunded: 'جزوی طور پر واپس کی گئی'
+    refunded: 'واپس کی گئی'
+  outcome:
+    succeeded:
+      title: 'ادائیگی موصول ہوئی'
+      body: '%amount% موصول ہوا۔ شکریہ۔'
+    failed:
+      title: 'ادائیگی ناکام ہوئی'
+      body: 'کچھ بھی نہیں لیا گیا۔ آپ دوبارہ کوشش کر سکتے ہیں، اسی طریقے سے یا دوسرے کے ساتھ۔'
+    canceled:
+      title: 'ادائیگی منسوخ کی گئی'
+      body: 'کچھ بھی نہیں لیا گیا۔'
+    manual:
+      title: 'آپ کی ادائیگی کا انتظار ہے'
+      body: '%amount% ہاتھ سے ادائیگی کرنے کے لیے۔ ادائیگی کو موصول ہونے پر نشان زد کیا جائے گا۔'
+    confirm:
+      title: 'آپ کی ادائیگی'
+    waiting:
+      title: 'ادائیگی کی تصدیق ہو رہی ہے'
+      body: 'فراہم کنندہ نے ابھی تک جواب نہیں دیا؛ یہ صفحہ جلد ہی اس کا جواب دکھائے گا۔'
+    transfer:
+      holder: 'اکاؤنٹ کا مالک'
+      iban: IBAN
+      bic: BIC
+      amount: رقم
+      reference: 'منتقلی پر لکھنے کے لیے حوالہ'
+
+ja:
+  no_description: 支払い
+  no_refund: 返金はありません。
+  field:
+    description: 対象
+    amount: 金額
+    method: 方法
+    status: ステータス
+    refunded: 返金済み
+    failure: 失敗した理由
+    date_created: 作成日
+    date_paid: 支払い日
+    customer: 支払者
+    provider: プロバイダー
+    provider_reference: プロバイダーのリファレンス
+    payable: 支払いオブジェクト
+    reason: 理由
+  method:
+    card: カード
+    demo_card: カード、デモプロバイダー
+    sepa_debit: 口座振替
+    transfer: 銀行振込
+    cash: 現金
+    cheque: 小切手
+    other: その他
+  status:
+    created: 作成済み
+    pending: 保留中
+    processing: 処理中
+    succeeded: 支払い完了
+    failed: 失敗
+    canceled: キャンセル済み
+    partially_refunded: 部分的に返金済み
+    refunded: 返金済み
+  outcome:
+    succeeded:
+      title: 支払いが受領されました
+      body: '%amount% を受領しました。ありがとうございます。'
+    failed:
+      title: 支払いに失敗しました
+      body: 何も引き落とされていません。同じ方法または別の方法で再試行できます。
+    canceled:
+      title: 支払いがキャンセルされました
+      body: 何も引き落とされていません。
+    manual:
+      title: お支払いをお待ちしています
+      body: '%amount% 手動で支払うための情報です。支払いが到着すると、受領済みとしてマークされます。'
+    confirm:
+      title: お支払い
+    waiting:
+      title: 支払いの確認中
+      body: プロバイダーからの回答はまだありません。このページは、回答が来次第表示されます。
+    transfer:
+      holder: 口座名義人
+      iban: IBAN
+      bic: BIC
+      amount: 金額
+      reference: 振込時に記載するリファレンス
+
+ko:
+  no_description: 결제
+  no_refund: '환불 불가입니다.'
+  field:
+    description: 용도
+    amount: 금액
+    method: 방법
+    status: 상태
+    refunded: 환불됨
+    failure: '실패 원인'
+    date_created: 생성일
+    date_paid: 결제일
+    customer: 지불자
+    provider: 제공자
+    provider_reference: '제공자 참조'
+    payable: '지불 객체'
+    reason: 이유
+  method:
+    card: 카드
+    demo_card: '카드, 데모 제공자'
+    sepa_debit: '직접 인출'
+    transfer: '은행 송금'
+    cash: 현금
+    cheque: 수표
+    other: 기타
+  status:
+    created: 생성됨
+    pending: '대기 중'
+    processing: '처리 중'
+    succeeded: '결제 완료'
+    failed: '결제 실패'
+    canceled: 취소됨
+    partially_refunded: '부분 환불됨'
+    refunded: 환불됨
+  outcome:
+    succeeded:
+      title: '결제가 완료되었습니다'
+      body: '%amount%가 수령되었습니다. 감사합니다.'
+    failed:
+      title: '결제가 실패했습니다'
+      body: '아무것도 청구되지 않았습니다. 같은 방법이나 다른 방법으로 다시 시도할 수 있습니다.'
+    canceled:
+      title: '결제가 취소되었습니다'
+      body: '아무것도 청구되지 않았습니다.'
+    manual:
+      title: '결제를 기다리는 중입니다'
+      body: '수동으로 지불할 %amount%. 결제가 도착하면 수령된 것으로 표시됩니다.'
+    confirm:
+      title: '귀하의 결제'
+    waiting:
+      title: '결제가 확인 중입니다'
+      body: '제공자가 아직 응답하지 않았습니다; 이 페이지는 응답이 도착하는 즉시 표시됩니다.'
+    transfer:
+      holder: '계좌 소유자'
+      iban: IBAN
+      bic: BIC
+      amount: 금액
+      reference: '송금 시 기재할 참조'
+
+bn:
+  no_description: পেমেন্ট
+  no_refund: 'কোন ফেরত নেই।'
+  field:
+    description: জন্য
+    amount: পরিমাণ
+    method: পদ্ধতি
+    status: অবস্থা
+    refunded: 'ফেরত দেওয়া হয়েছে'
+    failure: 'কেন এটি ব্যর্থ হয়েছে'
+    date_created: তারিখ
+    date_paid: 'পেমেন্টের তারিখ'
+    customer: পেমেন্টকারী
+    provider: প্রদানকারী
+    provider_reference: 'প্রদানকারীর রেফারেন্স'
+    payable: 'পেমেন্টযোগ্য বস্তু'
+    reason: কারণ
+  method:
+    card: কার্ড
+    demo_card: 'কার্ড, ডেমো প্রদানকারী'
+    sepa_debit: 'ডাইরেক্ট ডেবিট'
+    transfer: 'ব্যাংক ট্রান্সফার'
+    cash: নগদ
+    cheque: চেক
+    other: অন্যান্য
+  status:
+    created: 'তৈরি করা হয়েছে'
+    pending: অপেক্ষমান
+    processing: প্রক্রিয়াধীন
+    succeeded: 'পেমেন্ট হয়েছে'
+    failed: 'ব্যর্থ হয়েছে'
+    canceled: 'বাতিল হয়েছে'
+    partially_refunded: 'অংশত ফেরত দেওয়া হয়েছে'
+    refunded: 'ফেরত দেওয়া হয়েছে'
+  outcome:
+    succeeded:
+      title: 'পেমেন্ট গ্রহণ করা হয়েছে'
+      body: '%amount% গ্রহণ করা হয়েছে। ধন্যবাদ।'
+    failed:
+      title: 'পেমেন্ট ব্যর্থ হয়েছে'
+      body: 'কিছুই নেওয়া হয়নি। আপনি আবার চেষ্টা করতে পারেন, একই পদ্ধতি বা অন্যটির সাথে।'
+    canceled:
+      title: 'পেমেন্ট বাতিল করা হয়েছে'
+      body: 'কিছুই নেওয়া হয়নি।'
+    manual:
+      title: 'আপনার পেমেন্টের জন্য অপেক্ষা করছে'
+      body: '%amount% হাতে পেমেন্ট করতে। এটি গ্রহণ করা হয়েছে বলে চিহ্নিত হবে যখন এটি পৌঁছাবে।'
+    confirm:
+      title: 'আপনার পেমেন্ট'
+    waiting:
+      title: 'পেমেন্ট নিশ্চিত করা হচ্ছে'
+      body: 'প্রদানকারী এখনো উত্তর দেয়নি; এই পৃষ্ঠায় উত্তরটি আসলেই দেখানো হবে।'
+    transfer:
+      holder: 'অ্যাকাউন্টের মালিক'
+      iban: আইবিএন
+      bic: বিআইসি
+      amount: পরিমাণ
+      reference: 'ট্রান্সফারে লেখার জন্য রেফারেন্স'
+
+th:
+  no_description: การชำระเงิน
+  no_refund: ไม่มีการคืนเงิน.
+  field:
+    description: สำหรับ
+    amount: จำนวนเงิน
+    method: วิธีการ
+    status: สถานะ
+    refunded: คืนเงินแล้ว
+    failure: ทำไมถึงล้มเหลว
+    date_created: วันที่สร้าง
+    date_paid: วันที่ชำระเงิน
+    customer: ผู้ชำระเงิน
+    provider: ผู้ให้บริการ
+    provider_reference: หมายเลขอ้างอิงของผู้ให้บริการ
+    payable: วัตถุที่ชำระแล้ว
+    reason: เหตุผล
+  method:
+    card: บัตร
+    demo_card: 'บัตร, ผู้ให้บริการตัวอย่าง'
+    sepa_debit: หักบัญชีโดยตรง
+    transfer: โอนเงินผ่านธนาคาร
+    cash: เงินสด
+    cheque: เช็ค
+    other: อื่นๆ
+  status:
+    created: สร้างแล้ว
+    pending: รอดำเนินการ
+    processing: กำลังดำเนินการ
+    succeeded: ชำระเงินแล้ว
+    failed: ล้มเหลว
+    canceled: ถูกยกเลิก
+    partially_refunded: คืนเงินบางส่วน
+    refunded: คืนเงินแล้ว
+  outcome:
+    succeeded:
+      title: การชำระเงินได้รับแล้ว
+      body: '%amount% ได้รับแล้ว ขอบคุณค่ะ.'
+    failed:
+      title: การชำระเงินล้มเหลว
+      body: 'ไม่มีการหักเงิน คุณสามารถลองอีกครั้งด้วยวิธีเดียวกันหรือวิธีอื่น.'
+    canceled:
+      title: การชำระเงินถูกยกเลิก
+      body: ไม่มีการหักเงิน.
+    manual:
+      title: รอการชำระเงินของคุณ
+      body: '%amount% เพื่อชำระด้วยมือ การชำระเงินจะถูกทำเครื่องหมายว่าได้รับเมื่อถึงแล้ว.'
+    confirm:
+      title: การชำระเงินของคุณ
+    waiting:
+      title: การชำระเงินกำลังได้รับการยืนยัน
+      body: 'ผู้ให้บริการยังไม่ตอบกลับ; หน้านี้จะแสดงคำตอบเมื่อได้รับแล้ว.'
+    transfer:
+      holder: ชื่อบัญชี
+      iban: 'เลขที่ IBAN'
+      bic: BIC
+      amount: จำนวนเงิน
+      reference: หมายเลขอ้างอิงที่จะเขียนบนการโอน
+
+de:
+  no_description: Zahlung
+  no_refund: 'Keine Rückerstattung.'
+  field:
+    description: Für
+    amount: Betrag
+    method: Methode
+    status: Status
+    refunded: Erstattet
+    failure: 'Warum es fehlgeschlagen ist'
+    date_created: Datum
+    date_paid: 'Bezahlt am'
+    customer: Zahler
+    provider: Anbieter
+    provider_reference: 'Referenz des Anbieters'
+    payable: 'Bezahlt Objekt'
+    reason: Grund
+  method:
+    card: Karte
+    demo_card: 'Karte, Demoanbieter'
+    sepa_debit: Lastschrift
+    transfer: Banküberweisung
+    cash: Bargeld
+    cheque: Scheck
+    other: Sonstiges
+  status:
+    created: Erstellt
+    pending: Ausstehend
+    processing: 'Wird bearbeitet'
+    succeeded: Bezahlt
+    failed: Fehlgeschlagen
+    canceled: Storniert
+    partially_refunded: 'Teilweise erstattet'
+    refunded: Erstattet
+  outcome:
+    succeeded:
+      title: 'Zahlung erhalten'
+      body: '%amount% erhalten. Danke.'
+    failed:
+      title: 'Die Zahlung ist fehlgeschlagen'
+      body: 'Es wurde nichts abgebucht. Sie können es erneut versuchen, mit derselben Methode oder einer anderen.'
+    canceled:
+      title: 'Die Zahlung wurde storniert'
+      body: 'Es wurde nichts abgebucht.'
+    manual:
+      title: 'Warten auf Ihre Zahlung'
+      body: '%amount% zur manuellen Zahlung. Die Zahlung wird als erhalten markiert, sobald sie eingegangen ist.'
+    confirm:
+      title: 'Ihre Zahlung'
+    waiting:
+      title: 'Die Zahlung wird bestätigt'
+      body: 'Der Anbieter hat noch nicht geantwortet; diese Seite zeigt seine Antwort, sobald sie eintrifft.'
+    transfer:
+      holder: Kontoinhaber
+      iban: IBAN
+      bic: BIC
+      amount: Betrag
+      reference: 'Referenz, die auf die Überweisung geschrieben werden soll'
+
+fi:
+  no_description: Maksu
+  no_refund: 'Ei palautusta.'
+  field:
+    description: Kuvaus
+    amount: Summa
+    method: Maksutapa
+    status: Tila
+    refunded: Palautettu
+    failure: 'Miksi se epäonnistui'
+    date_created: Päivämäärä
+    date_paid: Maksettu
+    customer: Maksaja
+    provider: Palveluntarjoaja
+    provider_reference: 'Palveluntarjoajan viite'
+    payable: 'Maksettava kohde'
+    reason: Peruste
+  method:
+    card: Kortti
+    demo_card: 'Kortti, demo-palveluntarjoaja'
+    sepa_debit: 'Suora veloitus'
+    transfer: Pankkisiirto
+    cash: Käteinen
+    cheque: Sekki
+    other: Muu
+  status:
+    created: Luotu
+    pending: Odottaa
+    processing: Käsittelyssä
+    succeeded: Maksettu
+    failed: Epäonnistui
+    canceled: Peruutettu
+    partially_refunded: 'Osittain palautettu'
+    refunded: Palautettu
+  outcome:
+    succeeded:
+      title: 'Maksu vastaanotettu'
+      body: '%amount% vastaanotettu. Kiitos.'
+    failed:
+      title: 'Maksu epäonnistui'
+      body: 'Mikään ei mennyt läpi. Voit yrittää uudelleen samalla tai toisella menetelmällä.'
+    canceled:
+      title: 'Maksu peruutettiin'
+      body: 'Mikään ei mennyt läpi.'
+    manual:
+      title: 'Odotetaan maksua'
+      body: '%amount% maksettavaksi käsin. Maksu merkitään vastaanotetuksi, kun se on saapunut.'
+    confirm:
+      title: Maksusi
+    waiting:
+      title: 'Maksua vahvistetaan'
+      body: 'Palveluntarjoaja ei ole vielä vastannut; tämä sivu näyttää vastauksen heti, kun se saapuu.'
+    transfer:
+      holder: 'Tilin omistaja'
+      iban: IBAN
+      bic: BIC
+      amount: Summa
+      reference: 'Viite, joka kirjoitetaan siirtoon'
+
+ru:
+  no_description: Оплата
+  no_refund: 'Без возврата.'
+  field:
+    description: Для
+    amount: Сумма
+    method: Способ
+    status: Статус
+    refunded: Возвращено
+    failure: 'Почему не удалось'
+    date_created: Дата
+    date_paid: Оплачено
+    customer: Плательщик
+    provider: Провайдер
+    provider_reference: 'Ссылка провайдера'
+    payable: 'Объект оплаты'
+    reason: Причина
+  method:
+    card: Карточка
+    demo_card: 'Карточка, демонстрационный провайдер'
+    sepa_debit: 'Прямое дебетование'
+    transfer: 'Банковский перевод'
+    cash: Наличные
+    cheque: Чек
+    other: Другое
+  status:
+    created: Создано
+    pending: 'В ожидании'
+    processing: 'В обработке'
+    succeeded: Оплачено
+    failed: Неудачно
+    canceled: Отменено
+    partially_refunded: 'Частично возвращено'
+    refunded: Возвращено
+  outcome:
+    succeeded:
+      title: 'Оплата получена'
+      body: '%amount% получено. Спасибо.'
+    failed:
+      title: 'Оплата не удалась'
+      body: 'Ничего не было снято. Вы можете попробовать снова, используя тот же способ или другой.'
+    canceled:
+      title: 'Оплата была отменена'
+      body: 'Ничего не было снято.'
+    manual:
+      title: 'Ожидание вашего платежа'
+      body: '%amount% для ручной оплаты. Платеж будет отмечен как полученный, как только он поступит.'
+    confirm:
+      title: 'Ваш платеж'
+    waiting:
+      title: 'Оплата подтверждается'
+      body: 'Провайдер еще не ответил; эта страница покажет его ответ, как только он поступит.'
+    transfer:
+      holder: 'Владелец счета'
+      iban: IBAN
+      bic: BIC
+      amount: Сумма
+      reference: 'Ссылка для указания на перевод'
+
+pl:
+  no_description: Płatność
+  no_refund: 'Brak zwrotu.'
+  field:
+    description: Dla
+    amount: Kwota
+    method: Metoda
+    status: Status
+    refunded: Zwrócono
+    failure: 'Dlaczego nie powiodło się'
+    date_created: Data
+    date_paid: Opłacono
+    customer: Płatnik
+    provider: Dostawca
+    provider_reference: 'Referencja dostawcy'
+    payable: 'Obiekt płatności'
+    reason: Powód
+  method:
+    card: Karta
+    demo_card: 'Karta, dostawca demo'
+    sepa_debit: 'Polecenie zapłaty'
+    transfer: 'Przelew bankowy'
+    cash: Gotówka
+    cheque: Czek
+    other: Inne
+  status:
+    created: Utworzono
+    pending: Oczekujące
+    processing: 'W trakcie przetwarzania'
+    succeeded: Opłacono
+    failed: 'Nie powiodło się'
+    canceled: Anulowano
+    partially_refunded: 'Częściowo zwrócono'
+    refunded: Zwrócono
+  outcome:
+    succeeded:
+      title: 'Płatność odebrana'
+      body: '%amount% odebrane. Dziękujemy.'
+    failed:
+      title: 'Płatność nie powiodła się'
+      body: 'Nic nie zostało pobrane. Możesz spróbować ponownie, tą samą metodą lub inną.'
+    canceled:
+      title: 'Płatność została anulowana'
+      body: 'Nic nie zostało pobrane.'
+    manual:
+      title: 'Czekamy na Twoją płatność'
+      body: '%amount% do zapłaty ręcznie. Płatność jest oznaczona jako odebrana, gdy dotrze.'
+    confirm:
+      title: 'Twoja płatność'
+    waiting:
+      title: 'Płatność jest potwierdzana'
+      body: 'Dostawca jeszcze nie odpowiedział; ta strona wyświetli jego odpowiedź, gdy tylko nadejdzie.'
+    transfer:
+      holder: 'Właściciel konta'
+      iban: IBAN
+      bic: BIC
+      amount: Kwota
+      reference: 'Referencja do wpisania na przelewie'
+
+es:
+  no_description: Pago
+  no_refund: 'Sin reembolso.'
+  field:
+    description: Para
+    amount: Cantidad
+    method: Método
+    status: Estado
+    refunded: Reembolsado
+    failure: 'Por qué falló'
+    date_created: Fecha
+    date_paid: 'Pagado el'
+    customer: Pagador
+    provider: Proveedor
+    provider_reference: 'Referencia del proveedor'
+    payable: 'Objeto pagado'
+    reason: Razón
+  method:
+    card: Tarjeta
+    demo_card: 'Tarjeta, proveedor de demostración'
+    sepa_debit: 'Débito directo'
+    transfer: 'Transferencia bancaria'
+    cash: Efectivo
+    cheque: Cheque
+    other: Otro
+  status:
+    created: Creado
+    pending: Pendiente
+    processing: 'En proceso'
+    succeeded: Pagado
+    failed: Fallido
+    canceled: Cancelado
+    partially_refunded: 'Parcialmente reembolsado'
+    refunded: Reembolsado
+  outcome:
+    succeeded:
+      title: 'Pago recibido'
+      body: '%amount% recibido. Gracias.'
+    failed:
+      title: 'El pago falló'
+      body: 'No se ha realizado ningún cargo. Puedes intentar de nuevo, con el mismo método u otro diferente.'
+    canceled:
+      title: 'El pago fue cancelado'
+      body: 'No se ha realizado ningún cargo.'
+    manual:
+      title: 'Esperando tu pago'
+      body: '%amount% para pagar manualmente. El pago se marca como recibido una vez que ha llegado.'
+    confirm:
+      title: 'Tu pago'
+    waiting:
+      title: 'El pago está siendo confirmado'
+      body: 'El proveedor no ha respondido aún; esta página muestra su respuesta tan pronto como llegue.'
+    transfer:
+      holder: 'Titular de la cuenta'
+      iban: IBAN
+      bic: BIC
+      amount: Cantidad
+      reference: 'Referencia para escribir en la transferencia'
+
+it:
+  no_description: Pagamento
+  no_refund: 'Nessun rimborso.'
+  field:
+    description: Per
+    amount: Importo
+    method: Metodo
+    status: Stato
+    refunded: Rimborsato
+    failure: 'Perché è fallito'
+    date_created: Data
+    date_paid: 'Pagato il'
+    customer: Payer
+    provider: Fornitore
+    provider_reference: 'Riferimento del fornitore'
+    payable: 'Oggetto pagato'
+    reason: Motivo
+  method:
+    card: Carta
+    demo_card: 'Carta, fornitore demo'
+    sepa_debit: 'Addebito diretto'
+    transfer: 'Bonifico bancario'
+    cash: Contanti
+    cheque: Assegno
+    other: Altro
+  status:
+    created: Creato
+    pending: 'In attesa'
+    processing: 'In elaborazione'
+    succeeded: Pagato
+    failed: Fallito
+    canceled: Annullato
+    partially_refunded: 'Parzialmente rimborsato'
+    refunded: Rimborsato
+  outcome:
+    succeeded:
+      title: 'Pagamento ricevuto'
+      body: '%amount% ricevuto. Grazie.'
+    failed:
+      title: 'Il pagamento è fallito'
+      body: 'Niente è stato prelevato. Puoi riprovare, con lo stesso metodo o un altro.'
+    canceled:
+      title: 'Il pagamento è stato annullato'
+      body: 'Niente è stato prelevato.'
+    manual:
+      title: 'In attesa del tuo pagamento'
+      body: '%amount% da pagare a mano. Il pagamento è contrassegnato come ricevuto una volta arrivato.'
+    confirm:
+      title: 'Il tuo pagamento'
+    waiting:
+      title: 'Il pagamento è in fase di conferma'
+      body: 'Il fornitore non ha ancora risposto; questa pagina mostra la sua risposta non appena arriva.'
+    transfer:
+      holder: 'Intestatario del conto'
+      iban: IBAN
+      bic: BIC
+      amount: Importo
+      reference: 'Riferimento da scrivere sul bonifico'
+
+pt_BR:
+  no_description: Pagamento
+  no_refund: 'Sem reembolso.'
+  field:
+    description: Para
+    amount: Valor
+    method: Método
+    status: Status
+    refunded: Reembolsado
+    failure: 'Por que falhou'
+    date_created: Data
+    date_paid: 'Pago em'
+    customer: Pagador
+    provider: Fornecedor
+    provider_reference: 'Referência do fornecedor'
+    payable: 'Objeto pago'
+    reason: Razão
+  method:
+    card: Cartão
+    demo_card: 'Cartão, fornecedor de demonstração'
+    sepa_debit: 'Débito direto'
+    transfer: 'Transferência bancária'
+    cash: Dinheiro
+    cheque: Cheque
+    other: Outro
+  status:
+    created: Criado
+    pending: Pendente
+    processing: Processando
+    succeeded: Pago
+    failed: Falhou
+    canceled: Cancelado
+    partially_refunded: 'Parcialmente reembolsado'
+    refunded: Reembolsado
+  outcome:
+    succeeded:
+      title: 'Pagamento recebido'
+      body: '%amount% recebido. Obrigado.'
+    failed:
+      title: 'O pagamento falhou'
+      body: 'Nada foi cobrado. Você pode tentar novamente, com o mesmo método ou outro.'
+    canceled:
+      title: 'O pagamento foi cancelado'
+      body: 'Nada foi cobrado.'
+    manual:
+      title: 'Aguardando seu pagamento'
+      body: '%amount% para pagar manualmente. O pagamento é marcado como recebido assim que chegar.'
+    confirm:
+      title: 'Seu pagamento'
+    waiting:
+      title: 'O pagamento está sendo confirmado'
+      body: 'O fornecedor ainda não respondeu; esta página mostra a resposta assim que chegar.'
+    transfer:
+      holder: 'Titular da conta'
+      iban: IBAN
+      bic: BIC
+      amount: Valor
+      reference: 'Referência a ser escrita na transferência'
+
+tr:
+  no_description: Ödeme
+  no_refund: 'İade yok.'
+  field:
+    description: İçin
+    amount: Tutar
+    method: Yöntem
+    status: Durum
+    refunded: 'İade edildi'
+    failure: 'Neden başarısız oldu'
+    date_created: Tarih
+    date_paid: 'Ödenme tarihi'
+    customer: Ödeyici
+    provider: Sağlayıcı
+    provider_reference: 'Sağlayıcının referansı'
+    payable: 'Ödenen nesne'
+    reason: Sebep
+  method:
+    card: 'Kredi Kartı'
+    demo_card: 'Kredi Kartı, demo sağlayıcı'
+    sepa_debit: 'Doğrudan borç'
+    transfer: 'Banka havalesi'
+    cash: Nakit
+    cheque: Çek
+    other: Diğer
+  status:
+    created: Oluşturuldu
+    pending: Beklemede
+    processing: İşleniyor
+    succeeded: Ödendi
+    failed: 'Başarısız oldu'
+    canceled: 'İptal edildi'
+    partially_refunded: 'Kısmen iade edildi'
+    refunded: 'İade edildi'
+  outcome:
+    succeeded:
+      title: 'Ödeme alındı'
+      body: '%amount% alındı. Teşekkür ederiz.'
+    failed:
+      title: 'Ödeme başarısız oldu'
+      body: 'Hiçbir şey alınmadı. Aynı yöntemle veya başka bir yöntemle tekrar deneyebilirsiniz.'
+    canceled:
+      title: 'Ödeme iptal edildi'
+      body: 'Hiçbir şey alınmadı.'
+    manual:
+      title: 'Ödemenizi bekliyoruz'
+      body: '%amount% manuel ödeme için. Ödeme geldiğinde alınmış olarak işaretlenecektir.'
+    confirm:
+      title: Ödemeniz
+    waiting:
+      title: 'Ödeme onaylanıyor'
+      body: 'Sağlayıcı henüz yanıt vermedi; bu sayfa yanıt geldiğinde gösterecektir.'
+    transfer:
+      holder: 'Hesap sahibi'
+      iban: IBAN
+      bic: BIC
+      amount: Tutar
+      reference: 'Havalenin üzerine yazılacak referans'
+
+vi:
+  no_description: 'Thanh toán'
+  no_refund: 'Không hoàn tiền.'
+  field:
+    description: Cho
+    amount: 'Số tiền'
+    method: 'Phương thức'
+    status: 'Trạng thái'
+    refunded: 'Đã hoàn tiền'
+    failure: 'Tại sao nó thất bại'
+    date_created: 'Ngày tạo'
+    date_paid: 'Đã thanh toán vào'
+    customer: 'Người thanh toán'
+    provider: 'Nhà cung cấp'
+    provider_reference: 'Tham chiếu của nhà cung cấp'
+    payable: 'Đối tượng đã thanh toán'
+    reason: 'Lý do'
+  method:
+    card: Thẻ
+    demo_card: 'Thẻ, nhà cung cấp demo'
+    sepa_debit: 'Ghi nợ trực tiếp'
+    transfer: 'Chuyển khoản ngân hàng'
+    cash: 'Tiền mặt'
+    cheque: Séc
+    other: Khác
+  status:
+    created: 'Đã tạo'
+    pending: 'Đang chờ'
+    processing: 'Đang xử lý'
+    succeeded: 'Đã thanh toán'
+    failed: 'Thất bại'
+    canceled: 'Đã hủy'
+    partially_refunded: 'Đã hoàn tiền một phần'
+    refunded: 'Đã hoàn tiền'
+  outcome:
+    succeeded:
+      title: 'Thanh toán đã được nhận'
+      body: '%amount% đã nhận. Cảm ơn bạn.'
+    failed:
+      title: 'Thanh toán thất bại'
+      body: 'Không có gì được lấy. Bạn có thể thử lại, bằng phương thức giống hoặc khác.'
+    canceled:
+      title: 'Thanh toán đã bị hủy'
+      body: 'Không có gì được lấy.'
+    manual:
+      title: 'Chờ thanh toán của bạn'
+      body: '%amount% để thanh toán bằng tay. Thanh toán sẽ được đánh dấu là đã nhận khi nó đến.'
+    confirm:
+      title: 'Thanh toán của bạn'
+    waiting:
+      title: 'Thanh toán đang được xác nhận'
+      body: 'Nhà cung cấp chưa trả lời; trang này sẽ hiển thị phản hồi của họ ngay khi có.'
+    transfer:
+      holder: 'Chủ tài khoản'
+      iban: IBAN
+      bic: BIC
+      amount: 'Số tiền'
+      reference: 'Tham chiếu để viết trên chuyển khoản'
+
+id:
+  no_description: Pembayaran
+  no_refund: 'Tidak ada pengembalian dana.'
+  field:
+    description: Untuk
+    amount: Jumlah
+    method: Metode
+    status: Status
+    refunded: Dikembalikan
+    failure: 'Mengapa gagal'
+    date_created: Tanggal
+    date_paid: 'Dibayar pada'
+    customer: Pembayar
+    provider: Penyedia
+    provider_reference: 'Referensi penyedia'
+    payable: 'Objek yang dibayar'
+    reason: Alasan
+  method:
+    card: Kartu
+    demo_card: 'Kartu, penyedia demo'
+    sepa_debit: 'Debit langsung'
+    transfer: 'Transfer bank'
+    cash: Tunai
+    cheque: Cek
+    other: Lainnya
+  status:
+    created: Dibuat
+    pending: Menunggu
+    processing: 'Sedang diproses'
+    succeeded: Dibayar
+    failed: Gagal
+    canceled: Dibatalkan
+    partially_refunded: 'Sebagian dikembalikan'
+    refunded: Dikembalikan
+  outcome:
+    succeeded:
+      title: 'Pembayaran diterima'
+      body: '%amount% diterima. Terima kasih.'
+    failed:
+      title: 'Pembayaran gagal'
+      body: 'Tidak ada yang diambil. Anda dapat mencoba lagi, dengan metode yang sama atau lain.'
+    canceled:
+      title: 'Pembayaran dibatalkan'
+      body: 'Tidak ada yang diambil.'
+    manual:
+      title: 'Menunggu pembayaran Anda'
+      body: '%amount% untuk dibayar secara manual. Pembayaran akan ditandai sebagai diterima setelah tiba.'
+    confirm:
+      title: 'Pembayaran Anda'
+    waiting:
+      title: 'Pembayaran sedang dikonfirmasi'
+      body: 'Penyedia belum menjawab; halaman ini akan menampilkan jawabannya segera setelah tersedia.'
+    transfer:
+      holder: 'Pemilik akun'
+      iban: IBAN
+      bic: BIC
+      amount: Jumlah
+      reference: 'Referensi untuk dituliskan pada transfer'
+
+nl:
+  no_description: Betaling
+  no_refund: 'Geen terugbetaling.'
+  field:
+    description: Voor
+    amount: Bedrag
+    method: Methode
+    status: Status
+    refunded: Terugbetaald
+    failure: 'Waarom het is mislukt'
+    date_created: Datum
+    date_paid: 'Betaald op'
+    customer: Betaler
+    provider: Aanbieder
+    provider_reference: 'Referentie van de aanbieder'
+    payable: 'Betaald object'
+    reason: Reden
+  method:
+    card: Kaart
+    demo_card: 'Kaart, demo aanbieder'
+    sepa_debit: 'Automatische incasso'
+    transfer: Bankoverschrijving
+    cash: Contant
+    cheque: Cheque
+    other: Overig
+  status:
+    created: Aangemaakt
+    pending: 'In behandeling'
+    processing: Bezig
+    succeeded: Betaald
+    failed: Mislukt
+    canceled: Geannuleerd
+    partially_refunded: 'Deels terugbetaald'
+    refunded: Terugbetaald
+  outcome:
+    succeeded:
+      title: 'Betaling ontvangen'
+      body: '%amount% ontvangen. Bedankt.'
+    failed:
+      title: 'De betaling is mislukt'
+      body: 'Er is niets afgeschreven. U kunt het opnieuw proberen, met dezelfde methode of een andere.'
+    canceled:
+      title: 'De betaling is geannuleerd'
+      body: 'Er is niets afgeschreven.'
+    manual:
+      title: 'Wachten op uw betaling'
+      body: '%amount% om handmatig te betalen. De betaling wordt als ontvangen gemarkeerd zodra deze is aangekomen.'
+    confirm:
+      title: 'Uw betaling'
+    waiting:
+      title: 'De betaling wordt bevestigd'
+      body: 'De aanbieder heeft nog niet geantwoord; deze pagina toont zijn antwoord zodra het binnenkomt.'
+    transfer:
+      holder: Rekeninghouder
+      iban: IBAN
+      bic: BIC
+      amount: Bedrag
+      reference: 'Referentie om op de overschrijving te schrijven'
