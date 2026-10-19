@@ -30,6 +30,15 @@ class PaymentMethodFormProcessor extends AbstractFormProcessor
         parent::__construct($formFactory, $requestStack, $urlGenerator);
     }
 
+    /**
+     * What the submission handled pays for, not the next visitor's.
+     */
+    public function reset(): void
+    {
+        parent::reset();
+        $this->payable = null;
+    }
+
     public function forPayable(PayableInterface $payable): static
     {
         $this->payable = $payable;

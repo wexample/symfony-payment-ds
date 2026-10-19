@@ -33,6 +33,15 @@ class PaymentRefundFormProcessor extends AbstractFormProcessor
         parent::__construct($formFactory, $requestStack, $urlGenerator);
     }
 
+    /**
+     * The payment of the submission handled, not of the next visitor's.
+     */
+    public function reset(): void
+    {
+        parent::reset();
+        $this->payment = null;
+    }
+
     public function forPayment(Payment $payment): static
     {
         $this->payment = $payment;
