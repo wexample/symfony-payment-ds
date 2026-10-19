@@ -5,3 +5,11 @@ en:
 fr:
   waiting: En attente de la réponse du prestataire…
   long: Toujours en attente. La réponse s'affichera ici dès qu'elle arrive ; vous pouvez aussi revenir plus tard.
+
+zh:
+  waiting: 等待提供者的回复…
+  long: 仍在等待。答案将在这里显示，您也可以稍后再回来查看。
+
+ar:
+  waiting: 'في انتظار رد المزود…'
+  long: 'ما زلت في الانتظار. سيتم عرض الرد هنا بمجرد وصوله؛ يمكنك أيضًا العودة لاحقًا.'

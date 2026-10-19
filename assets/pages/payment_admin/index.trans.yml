@@ -7,3 +7,13 @@ fr:
   page_title: Paiements
   page_icon: ph:bold/bank
   intro: Tous les paiements, à chercher et filtrer par statut ; chacun s'ouvre sur ce qu'on peut en faire.
+
+zh:
+  page_title: 支付
+  page_icon: 'ph:bold/bank'
+  intro: 每笔支付都按状态进行搜索和筛选；每笔支付都可以查看可以采取的操作。
+
+ar:
+  page_title: المدفوعات
+  page_icon: 'ph:bold/bank'
+  intro: 'كل مدفوعات، تم البحث عنها وتضييقها حسب الحالة؛ كل منها يفتح على ما يمكن القيام به.'

@@ -45,3 +45,51 @@ fr:
   refund:
     title: Rembourser
   refunds: Remboursements
+
+zh:
+  page_title: 支付
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 重新从提供方读取
+    confirm: 标记为已收
+    cancel: 取消
+  confirm:
+    synchronize: 是否重新从其提供方读取此支付？
+    confirm: 是否将此支付标记为已收？在资金到达后进行操作。
+    cancel: 是否取消此支付？付款人将需要重新付款。
+  done:
+    synchronize: 支付已重新从其提供方读取。
+    confirm: 支付已标记为已收。
+    cancel: 支付已取消。
+    refund: 退款已完成。
+  refused:
+    synchronize: 无法读取提供方。
+    confirm: 无法将支付标记为已收。
+    cancel: 无法取消此支付。
+  refund:
+    title: 退款
+  refunds: 退款
+
+ar:
+  page_title: الدفع
+  page_icon: 'ph:bold/bank'
+  action:
+    synchronize: 'إعادة القراءة من المزود'
+    confirm: 'تأكيد الاستلام'
+    cancel: إلغاء
+  confirm:
+    synchronize: 'هل تريد إعادة قراءة هذه الدفعة من مزودها؟'
+    confirm: 'هل تريد تأكيد استلام هذه الدفعة؟ قم بذلك بمجرد وصول الأموال.'
+    cancel: 'هل تريد إلغاء هذه الدفعة؟ سيتعين على الدافع الدفع مرة أخرى.'
+  done:
+    synchronize: 'تمت إعادة قراءة الدفعة من مزودها.'
+    confirm: 'تم تأكيد استلام الدفعة.'
+    cancel: 'تم إلغاء الدفعة.'
+    refund: 'تمت المعالجة.'
+  refused:
+    synchronize: 'لم يتمكن المزود من القراءة.'
+    confirm: 'لم يتمكن من تأكيد استلام الدفعة.'
+    cancel: 'لم يتمكن من إلغاء الدفعة.'
+  refund:
+    title: استرداد
+  refunds: الاستردادات

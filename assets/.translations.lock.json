@@ -1,0 +1,926 @@
+{
+    "common/payment.ar.yml": {
+        "field.amount": {
+            "hash": "5fd30b84f9e6eb23b825d2139a194e76",
+            "engine": "syrtis"
+        },
+        "field.customer": {
+            "hash": "0b3a0a0212920946cc65b31918ba08be",
+            "engine": "syrtis"
+        },
+        "field.date_created": {
+            "hash": "d5cb8fa6c4af60f022ac0fc17b373faf",
+            "engine": "syrtis"
+        },
+        "field.date_paid": {
+            "hash": "8be5dabaad0db5183a32eb15b38411ea",
+            "engine": "syrtis"
+        },
+        "field.description": {
+            "hash": "2dfc021581d60dcfafcc45c101b8be66",
+            "engine": "syrtis"
+        },
+        "field.failure": {
+            "hash": "30526b6ae7ba28215bb114a301bf5dc0",
+            "engine": "syrtis"
+        },
+        "field.method": {
+            "hash": "3eb557561c9f5eaf1714849e2040a19a",
+            "engine": "syrtis"
+        },
+        "field.payable": {
+            "hash": "5c08d75b96ea25237cd3e9532d66f2f3",
+            "engine": "syrtis"
+        },
+        "field.provider": {
+            "hash": "1911d089dc43aaa5dd3cc69f6e241e13",
+            "engine": "syrtis"
+        },
+        "field.provider_reference": {
+            "hash": "ea16f33fda994fe6789c171dd0bbd85d",
+            "engine": "syrtis"
+        },
+        "field.reason": {
+            "hash": "5da46348c3d0de2bf4121c14751d80f2",
+            "engine": "syrtis"
+        },
+        "field.refunded": {
+            "hash": "456122c9a8045c2ac094b8ccfb8ec5fb",
+            "engine": "syrtis"
+        },
+        "field.status": {
+            "hash": "eb10925a264a03ef1a2eb7e0d8118304",
+            "engine": "syrtis"
+        },
+        "method.card": {
+            "hash": "620c04694106730cbcef4542d91fd7b4",
+            "engine": "syrtis"
+        },
+        "method.cash": {
+            "hash": "2bb44fee81ed9fa21a1c760e4fc45686",
+            "engine": "syrtis"
+        },
+        "method.cheque": {
+            "hash": "73738b1f441f3837d5185b4c5c41dc7c",
+            "engine": "syrtis"
+        },
+        "method.demo_card": {
+            "hash": "b1408436f2f6acb742134629e3887c15",
+            "engine": "syrtis"
+        },
+        "method.other": {
+            "hash": "6a21523accb1d1c7b9dfc0b1f2ef5af4",
+            "engine": "syrtis"
+        },
+        "method.sepa_debit": {
+            "hash": "c5ba3ca21865d7c15f8e0b037e499eab",
+            "engine": "syrtis"
+        },
+        "method.transfer": {
+            "hash": "f99615144fbf5614880b274c3ede8eb3",
+            "engine": "syrtis"
+        },
+        "no_description": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        },
+        "no_refund": {
+            "hash": "b41f0cfbe7f3b645e8a2615a80ce502c",
+            "engine": "syrtis"
+        },
+        "outcome.canceled.body": {
+            "hash": "4909899bc9e8252c7f31e29428008d36",
+            "engine": "syrtis"
+        },
+        "outcome.canceled.title": {
+            "hash": "c1d994490ac6827f7408d94c568fa510",
+            "engine": "syrtis"
+        },
+        "outcome.confirm.title": {
+            "hash": "cdc8377bfe7e44b3e821b53ba6039c19",
+            "engine": "syrtis"
+        },
+        "outcome.failed.body": {
+            "hash": "fe6121842d94f5ff1cdb7c6220d0c0d1",
+            "engine": "syrtis"
+        },
+        "outcome.failed.title": {
+            "hash": "8c34b5a14c5da8a45c53da1e108ad0f0",
+            "engine": "syrtis"
+        },
+        "outcome.manual.body": {
+            "hash": "31536014cf031a63c5fa56033f8eb55c",
+            "engine": "syrtis"
+        },
+        "outcome.manual.title": {
+            "hash": "6cf566d0265069c7aafc9b75fce5c131",
+            "engine": "syrtis"
+        },
+        "outcome.succeeded.body": {
+            "hash": "58587b383992760fb4e0848b813f2048",
+            "engine": "syrtis"
+        },
+        "outcome.succeeded.title": {
+            "hash": "7b31bb1dd7d22aa8c924d12531d5fc93",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.amount": {
+            "hash": "5fd30b84f9e6eb23b825d2139a194e76",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.bic": {
+            "hash": "720fa4326923aa26383bf4e8d7c4ad28",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.holder": {
+            "hash": "7ed4d3a58e688d5b6a3d6033ef7947ce",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.iban": {
+            "hash": "fa4e027c2b5923a36eb8b12ee67a00cd",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.reference": {
+            "hash": "d4d7edbdb904ff8ae5b064310c1a38a1",
+            "engine": "syrtis"
+        },
+        "outcome.waiting.body": {
+            "hash": "05d0a124f0d5411f0ddaa7a7133f4a04",
+            "engine": "syrtis"
+        },
+        "outcome.waiting.title": {
+            "hash": "c76b84d4aeb3134782e14299649e1740",
+            "engine": "syrtis"
+        },
+        "status.canceled": {
+            "hash": "6b1d0671b959aa10b186df286ecd0f60",
+            "engine": "syrtis"
+        },
+        "status.created": {
+            "hash": "422ce8c0cab0d472cfd2be8bd2497829",
+            "engine": "syrtis"
+        },
+        "status.failed": {
+            "hash": "4bfbe784f243989f798fd8af6044ce21",
+            "engine": "syrtis"
+        },
+        "status.partially_refunded": {
+            "hash": "98e2b2ded3909fdf97cf63ad4c904b60",
+            "engine": "syrtis"
+        },
+        "status.pending": {
+            "hash": "fe4bb78ccb8a505143beb54d2ba68c96",
+            "engine": "syrtis"
+        },
+        "status.processing": {
+            "hash": "059cd747847f9e01ba08e204cb3c9058",
+            "engine": "syrtis"
+        },
+        "status.refunded": {
+            "hash": "456122c9a8045c2ac094b8ccfb8ec5fb",
+            "engine": "syrtis"
+        },
+        "status.succeeded": {
+            "hash": "2121848c36d4d41072b4015fd9603ccf",
+            "engine": "syrtis"
+        }
+    },
+    "common/payment.zh.yml": {
+        "field.amount": {
+            "hash": "5fd30b84f9e6eb23b825d2139a194e76",
+            "engine": "syrtis"
+        },
+        "field.customer": {
+            "hash": "0b3a0a0212920946cc65b31918ba08be",
+            "engine": "syrtis"
+        },
+        "field.date_created": {
+            "hash": "d5cb8fa6c4af60f022ac0fc17b373faf",
+            "engine": "syrtis"
+        },
+        "field.date_paid": {
+            "hash": "8be5dabaad0db5183a32eb15b38411ea",
+            "engine": "syrtis"
+        },
+        "field.description": {
+            "hash": "2dfc021581d60dcfafcc45c101b8be66",
+            "engine": "syrtis"
+        },
+        "field.failure": {
+            "hash": "30526b6ae7ba28215bb114a301bf5dc0",
+            "engine": "syrtis"
+        },
+        "field.method": {
+            "hash": "3eb557561c9f5eaf1714849e2040a19a",
+            "engine": "syrtis"
+        },
+        "field.payable": {
+            "hash": "5c08d75b96ea25237cd3e9532d66f2f3",
+            "engine": "syrtis"
+        },
+        "field.provider": {
+            "hash": "1911d089dc43aaa5dd3cc69f6e241e13",
+            "engine": "syrtis"
+        },
+        "field.provider_reference": {
+            "hash": "ea16f33fda994fe6789c171dd0bbd85d",
+            "engine": "syrtis"
+        },
+        "field.reason": {
+            "hash": "5da46348c3d0de2bf4121c14751d80f2",
+            "engine": "syrtis"
+        },
+        "field.refunded": {
+            "hash": "456122c9a8045c2ac094b8ccfb8ec5fb",
+            "engine": "syrtis"
+        },
+        "field.status": {
+            "hash": "eb10925a264a03ef1a2eb7e0d8118304",
+            "engine": "syrtis"
+        },
+        "method.card": {
+            "hash": "620c04694106730cbcef4542d91fd7b4",
+            "engine": "syrtis"
+        },
+        "method.cash": {
+            "hash": "2bb44fee81ed9fa21a1c760e4fc45686",
+            "engine": "syrtis"
+        },
+        "method.cheque": {
+            "hash": "73738b1f441f3837d5185b4c5c41dc7c",
+            "engine": "syrtis"
+        },
+        "method.demo_card": {
+            "hash": "b1408436f2f6acb742134629e3887c15",
+            "engine": "syrtis"
+        },
+        "method.other": {
+            "hash": "6a21523accb1d1c7b9dfc0b1f2ef5af4",
+            "engine": "syrtis"
+        },
+        "method.sepa_debit": {
+            "hash": "c5ba3ca21865d7c15f8e0b037e499eab",
+            "engine": "syrtis"
+        },
+        "method.transfer": {
+            "hash": "f99615144fbf5614880b274c3ede8eb3",
+            "engine": "syrtis"
+        },
+        "no_description": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        },
+        "no_refund": {
+            "hash": "b41f0cfbe7f3b645e8a2615a80ce502c",
+            "engine": "syrtis"
+        },
+        "outcome.canceled.body": {
+            "hash": "4909899bc9e8252c7f31e29428008d36",
+            "engine": "syrtis"
+        },
+        "outcome.canceled.title": {
+            "hash": "c1d994490ac6827f7408d94c568fa510",
+            "engine": "syrtis"
+        },
+        "outcome.confirm.title": {
+            "hash": "cdc8377bfe7e44b3e821b53ba6039c19",
+            "engine": "syrtis"
+        },
+        "outcome.failed.body": {
+            "hash": "fe6121842d94f5ff1cdb7c6220d0c0d1",
+            "engine": "syrtis"
+        },
+        "outcome.failed.title": {
+            "hash": "8c34b5a14c5da8a45c53da1e108ad0f0",
+            "engine": "syrtis"
+        },
+        "outcome.manual.body": {
+            "hash": "31536014cf031a63c5fa56033f8eb55c",
+            "engine": "syrtis"
+        },
+        "outcome.manual.title": {
+            "hash": "6cf566d0265069c7aafc9b75fce5c131",
+            "engine": "syrtis"
+        },
+        "outcome.succeeded.body": {
+            "hash": "58587b383992760fb4e0848b813f2048",
+            "engine": "syrtis"
+        },
+        "outcome.succeeded.title": {
+            "hash": "7b31bb1dd7d22aa8c924d12531d5fc93",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.amount": {
+            "hash": "5fd30b84f9e6eb23b825d2139a194e76",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.bic": {
+            "hash": "720fa4326923aa26383bf4e8d7c4ad28",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.holder": {
+            "hash": "7ed4d3a58e688d5b6a3d6033ef7947ce",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.iban": {
+            "hash": "fa4e027c2b5923a36eb8b12ee67a00cd",
+            "engine": "syrtis"
+        },
+        "outcome.transfer.reference": {
+            "hash": "d4d7edbdb904ff8ae5b064310c1a38a1",
+            "engine": "syrtis"
+        },
+        "outcome.waiting.body": {
+            "hash": "05d0a124f0d5411f0ddaa7a7133f4a04",
+            "engine": "syrtis"
+        },
+        "outcome.waiting.title": {
+            "hash": "c76b84d4aeb3134782e14299649e1740",
+            "engine": "syrtis"
+        },
+        "status.canceled": {
+            "hash": "6b1d0671b959aa10b186df286ecd0f60",
+            "engine": "syrtis"
+        },
+        "status.created": {
+            "hash": "422ce8c0cab0d472cfd2be8bd2497829",
+            "engine": "syrtis"
+        },
+        "status.failed": {
+            "hash": "4bfbe784f243989f798fd8af6044ce21",
+            "engine": "syrtis"
+        },
+        "status.partially_refunded": {
+            "hash": "98e2b2ded3909fdf97cf63ad4c904b60",
+            "engine": "syrtis"
+        },
+        "status.pending": {
+            "hash": "fe4bb78ccb8a505143beb54d2ba68c96",
+            "engine": "syrtis"
+        },
+        "status.processing": {
+            "hash": "059cd747847f9e01ba08e204cb3c9058",
+            "engine": "syrtis"
+        },
+        "status.refunded": {
+            "hash": "456122c9a8045c2ac094b8ccfb8ec5fb",
+            "engine": "syrtis"
+        },
+        "status.succeeded": {
+            "hash": "2121848c36d4d41072b4015fd9603ccf",
+            "engine": "syrtis"
+        }
+    },
+    "components/payment-status/payment-status.ar.yml": {
+        "long": {
+            "hash": "1013f83ac88ffd28ba24b0877c5bb931",
+            "engine": "syrtis"
+        },
+        "waiting": {
+            "hash": "8e007cd849a6d91fec296c23be95c62f",
+            "engine": "syrtis"
+        }
+    },
+    "components/payment-status/payment-status.zh.yml": {
+        "long": {
+            "hash": "1013f83ac88ffd28ba24b0877c5bb931",
+            "engine": "syrtis"
+        },
+        "waiting": {
+            "hash": "8e007cd849a6d91fec296c23be95c62f",
+            "engine": "syrtis"
+        }
+    },
+    "components/payment-table/payment-table.ar.yml": {
+        "column.amount": {
+            "hash": "5fd30b84f9e6eb23b825d2139a194e76",
+            "engine": "syrtis"
+        },
+        "column.customer": {
+            "hash": "0b3a0a0212920946cc65b31918ba08be",
+            "engine": "syrtis"
+        },
+        "column.date": {
+            "hash": "d5cb8fa6c4af60f022ac0fc17b373faf",
+            "engine": "syrtis"
+        },
+        "column.description": {
+            "hash": "2dfc021581d60dcfafcc45c101b8be66",
+            "engine": "syrtis"
+        },
+        "column.method": {
+            "hash": "3eb557561c9f5eaf1714849e2040a19a",
+            "engine": "syrtis"
+        },
+        "column.provider": {
+            "hash": "1911d089dc43aaa5dd3cc69f6e241e13",
+            "engine": "syrtis"
+        },
+        "column.status": {
+            "hash": "eb10925a264a03ef1a2eb7e0d8118304",
+            "engine": "syrtis"
+        },
+        "no_description": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        }
+    },
+    "components/payment-table/payment-table.zh.yml": {
+        "column.amount": {
+            "hash": "5fd30b84f9e6eb23b825d2139a194e76",
+            "engine": "syrtis"
+        },
+        "column.customer": {
+            "hash": "0b3a0a0212920946cc65b31918ba08be",
+            "engine": "syrtis"
+        },
+        "column.date": {
+            "hash": "d5cb8fa6c4af60f022ac0fc17b373faf",
+            "engine": "syrtis"
+        },
+        "column.description": {
+            "hash": "2dfc021581d60dcfafcc45c101b8be66",
+            "engine": "syrtis"
+        },
+        "column.method": {
+            "hash": "3eb557561c9f5eaf1714849e2040a19a",
+            "engine": "syrtis"
+        },
+        "column.provider": {
+            "hash": "1911d089dc43aaa5dd3cc69f6e241e13",
+            "engine": "syrtis"
+        },
+        "column.status": {
+            "hash": "eb10925a264a03ef1a2eb7e0d8118304",
+            "engine": "syrtis"
+        },
+        "no_description": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        }
+    },
+    "components/stripe-payment/stripe-payment.ar.yml": {
+        "failed": {
+            "hash": "fd6e456959dbda42216ff43034831d45",
+            "engine": "syrtis"
+        },
+        "loading": {
+            "hash": "edf2d2dc7f3b7510f0a7db769e339f1c",
+            "engine": "syrtis"
+        },
+        "pay": {
+            "hash": "6a7d8ce7d7dfcdd87e242faee799b404",
+            "engine": "syrtis"
+        },
+        "unavailable": {
+            "hash": "e3f2b814695a37af170c7acc7471626b",
+            "engine": "syrtis"
+        }
+    },
+    "components/stripe-payment/stripe-payment.zh.yml": {
+        "failed": {
+            "hash": "fd6e456959dbda42216ff43034831d45",
+            "engine": "syrtis"
+        },
+        "loading": {
+            "hash": "edf2d2dc7f3b7510f0a7db769e339f1c",
+            "engine": "syrtis"
+        },
+        "pay": {
+            "hash": "6a7d8ce7d7dfcdd87e242faee799b404",
+            "engine": "syrtis"
+        },
+        "unavailable": {
+            "hash": "e3f2b814695a37af170c7acc7471626b",
+            "engine": "syrtis"
+        }
+    },
+    "forms/payment_method_form.ar.yml": {
+        "action.pay": {
+            "hash": "6a7d8ce7d7dfcdd87e242faee799b404",
+            "engine": "syrtis"
+        },
+        "field.method.choice.card.label": {
+            "hash": "620c04694106730cbcef4542d91fd7b4",
+            "engine": "syrtis"
+        },
+        "field.method.choice.cash.label": {
+            "hash": "2bb44fee81ed9fa21a1c760e4fc45686",
+            "engine": "syrtis"
+        },
+        "field.method.choice.cheque.label": {
+            "hash": "73738b1f441f3837d5185b4c5c41dc7c",
+            "engine": "syrtis"
+        },
+        "field.method.choice.demo_card.label": {
+            "hash": "b1408436f2f6acb742134629e3887c15",
+            "engine": "syrtis"
+        },
+        "field.method.choice.other.label": {
+            "hash": "6a21523accb1d1c7b9dfc0b1f2ef5af4",
+            "engine": "syrtis"
+        },
+        "field.method.choice.sepa_debit.label": {
+            "hash": "c5ba3ca21865d7c15f8e0b037e499eab",
+            "engine": "syrtis"
+        },
+        "field.method.choice.transfer.label": {
+            "hash": "f99615144fbf5614880b274c3ede8eb3",
+            "engine": "syrtis"
+        },
+        "field.method.label": {
+            "hash": "72e9ddf505f6cad1984452a87a425773",
+            "engine": "syrtis"
+        }
+    },
+    "forms/payment_method_form.zh.yml": {
+        "action.pay": {
+            "hash": "6a7d8ce7d7dfcdd87e242faee799b404",
+            "engine": "syrtis"
+        },
+        "field.method.choice.card.label": {
+            "hash": "620c04694106730cbcef4542d91fd7b4",
+            "engine": "syrtis"
+        },
+        "field.method.choice.cash.label": {
+            "hash": "2bb44fee81ed9fa21a1c760e4fc45686",
+            "engine": "syrtis"
+        },
+        "field.method.choice.cheque.label": {
+            "hash": "73738b1f441f3837d5185b4c5c41dc7c",
+            "engine": "syrtis"
+        },
+        "field.method.choice.demo_card.label": {
+            "hash": "b1408436f2f6acb742134629e3887c15",
+            "engine": "syrtis"
+        },
+        "field.method.choice.other.label": {
+            "hash": "6a21523accb1d1c7b9dfc0b1f2ef5af4",
+            "engine": "syrtis"
+        },
+        "field.method.choice.sepa_debit.label": {
+            "hash": "c5ba3ca21865d7c15f8e0b037e499eab",
+            "engine": "syrtis"
+        },
+        "field.method.choice.transfer.label": {
+            "hash": "f99615144fbf5614880b274c3ede8eb3",
+            "engine": "syrtis"
+        },
+        "field.method.label": {
+            "hash": "72e9ddf505f6cad1984452a87a425773",
+            "engine": "syrtis"
+        }
+    },
+    "forms/payment_refund_form.ar.yml": {
+        "action.refund": {
+            "hash": "c3a82da58c3c07f8b9fdca53d28da091",
+            "engine": "syrtis"
+        },
+        "field.amount.label": {
+            "hash": "e7cfc6b69bc494ea51af6cd7717b509b",
+            "engine": "syrtis"
+        },
+        "field.reason.label": {
+            "hash": "5da46348c3d0de2bf4121c14751d80f2",
+            "engine": "syrtis"
+        }
+    },
+    "forms/payment_refund_form.zh.yml": {
+        "action.refund": {
+            "hash": "c3a82da58c3c07f8b9fdca53d28da091",
+            "engine": "syrtis"
+        },
+        "field.amount.label": {
+            "hash": "e7cfc6b69bc494ea51af6cd7717b509b",
+            "engine": "syrtis"
+        },
+        "field.reason.label": {
+            "hash": "5da46348c3d0de2bf4121c14751d80f2",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payment_admin/index.ar.yml": {
+        "intro": {
+            "hash": "e7e609eeb6ab67c70206909a6cec3627",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "0ac0253980998709a910c63f50defd3e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "581e6114306363f773ef4198ce4a0f47",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payment_admin/index.zh.yml": {
+        "intro": {
+            "hash": "e7e609eeb6ab67c70206909a6cec3627",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "0ac0253980998709a910c63f50defd3e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "581e6114306363f773ef4198ce4a0f47",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payment_admin/show.ar.yml": {
+        "action.cancel": {
+            "hash": "121cad078beccff8a1ea9128c3906546",
+            "engine": "syrtis"
+        },
+        "action.confirm": {
+            "hash": "837da887af5466e7052e2bec9bb73995",
+            "engine": "syrtis"
+        },
+        "action.synchronize": {
+            "hash": "42b959e02c0fa01bcb148bdff13ed0d0",
+            "engine": "syrtis"
+        },
+        "confirm.cancel": {
+            "hash": "b339f5230301b28d0983ef572cf664ea",
+            "engine": "syrtis"
+        },
+        "confirm.confirm": {
+            "hash": "cf5abb6056a5c2ffa06e1337cab0dfd2",
+            "engine": "syrtis"
+        },
+        "confirm.synchronize": {
+            "hash": "db0a82e3e4616b0e60dbe1f1e20c8992",
+            "engine": "syrtis"
+        },
+        "done.cancel": {
+            "hash": "2ae6fdee4d2e04002c3e3480810796fe",
+            "engine": "syrtis"
+        },
+        "done.confirm": {
+            "hash": "f82b22125810a585bb8cce2fad5c1f43",
+            "engine": "syrtis"
+        },
+        "done.refund": {
+            "hash": "0232090e21870c4b88d02467390463df",
+            "engine": "syrtis"
+        },
+        "done.synchronize": {
+            "hash": "04ee1c0fc35dd7d497af1ca52cb966f3",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "0ac0253980998709a910c63f50defd3e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        },
+        "refund.title": {
+            "hash": "c3a82da58c3c07f8b9fdca53d28da091",
+            "engine": "syrtis"
+        },
+        "refunds": {
+            "hash": "418302921e9496e69497e4b3a5f7f789",
+            "engine": "syrtis"
+        },
+        "refused.cancel": {
+            "hash": "946ae21612a9fad53a206a438a00e8cd",
+            "engine": "syrtis"
+        },
+        "refused.confirm": {
+            "hash": "6e1e68b4f9376e8c4136301194d52130",
+            "engine": "syrtis"
+        },
+        "refused.synchronize": {
+            "hash": "4797af7c577678563b7be0a6d0d7d011",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payment_admin/show.zh.yml": {
+        "action.cancel": {
+            "hash": "121cad078beccff8a1ea9128c3906546",
+            "engine": "syrtis"
+        },
+        "action.confirm": {
+            "hash": "837da887af5466e7052e2bec9bb73995",
+            "engine": "syrtis"
+        },
+        "action.synchronize": {
+            "hash": "42b959e02c0fa01bcb148bdff13ed0d0",
+            "engine": "syrtis"
+        },
+        "confirm.cancel": {
+            "hash": "b339f5230301b28d0983ef572cf664ea",
+            "engine": "syrtis"
+        },
+        "confirm.confirm": {
+            "hash": "cf5abb6056a5c2ffa06e1337cab0dfd2",
+            "engine": "syrtis"
+        },
+        "confirm.synchronize": {
+            "hash": "db0a82e3e4616b0e60dbe1f1e20c8992",
+            "engine": "syrtis"
+        },
+        "done.cancel": {
+            "hash": "2ae6fdee4d2e04002c3e3480810796fe",
+            "engine": "syrtis"
+        },
+        "done.confirm": {
+            "hash": "f82b22125810a585bb8cce2fad5c1f43",
+            "engine": "syrtis"
+        },
+        "done.refund": {
+            "hash": "0232090e21870c4b88d02467390463df",
+            "engine": "syrtis"
+        },
+        "done.synchronize": {
+            "hash": "04ee1c0fc35dd7d497af1ca52cb966f3",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "0ac0253980998709a910c63f50defd3e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        },
+        "refund.title": {
+            "hash": "c3a82da58c3c07f8b9fdca53d28da091",
+            "engine": "syrtis"
+        },
+        "refunds": {
+            "hash": "418302921e9496e69497e4b3a5f7f789",
+            "engine": "syrtis"
+        },
+        "refused.cancel": {
+            "hash": "946ae21612a9fad53a206a438a00e8cd",
+            "engine": "syrtis"
+        },
+        "refused.confirm": {
+            "hash": "6e1e68b4f9376e8c4136301194d52130",
+            "engine": "syrtis"
+        },
+        "refused.synchronize": {
+            "hash": "4797af7c577678563b7be0a6d0d7d011",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/index.ar.yml": {
+        "intro": {
+            "hash": "46d03b3de7510c47a73f8432ed6b8fbf",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "d94986d2f21cc73b61879fcf99d4945e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "4802893178fcb067634c04bb0110e92f",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/index.zh.yml": {
+        "intro": {
+            "hash": "46d03b3de7510c47a73f8432ed6b8fbf",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "d94986d2f21cc73b61879fcf99d4945e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "4802893178fcb067634c04bb0110e92f",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/pay.ar.yml": {
+        "page_icon": {
+            "hash": "4f5bc94682d726392626787719625a2f",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "6a7d8ce7d7dfcdd87e242faee799b404",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/pay.zh.yml": {
+        "page_icon": {
+            "hash": "4f5bc94682d726392626787719625a2f",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "6a7d8ce7d7dfcdd87e242faee799b404",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/receipt.ar.yml": {
+        "heading": {
+            "hash": "3510a5f5965424c2efa0577c9f142e10",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "d94986d2f21cc73b61879fcf99d4945e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "080c8b0e3c1186391dbd7c01fe13e68f",
+            "engine": "syrtis"
+        },
+        "refunds": {
+            "hash": "418302921e9496e69497e4b3a5f7f789",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/receipt.zh.yml": {
+        "heading": {
+            "hash": "3510a5f5965424c2efa0577c9f142e10",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "d94986d2f21cc73b61879fcf99d4945e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "080c8b0e3c1186391dbd7c01fe13e68f",
+            "engine": "syrtis"
+        },
+        "refunds": {
+            "hash": "418302921e9496e69497e4b3a5f7f789",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/return.ar.yml": {
+        "page_icon": {
+            "hash": "4f5bc94682d726392626787719625a2f",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        },
+        "receipt": {
+            "hash": "080c8b0e3c1186391dbd7c01fe13e68f",
+            "engine": "syrtis"
+        },
+        "retry": {
+            "hash": "bdb04de4a2ed1f9568b8558a3980c04a",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/return.zh.yml": {
+        "page_icon": {
+            "hash": "4f5bc94682d726392626787719625a2f",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        },
+        "receipt": {
+            "hash": "080c8b0e3c1186391dbd7c01fe13e68f",
+            "engine": "syrtis"
+        },
+        "retry": {
+            "hash": "bdb04de4a2ed1f9568b8558a3980c04a",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/show.ar.yml": {
+        "page_icon": {
+            "hash": "d94986d2f21cc73b61879fcf99d4945e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        },
+        "receipt": {
+            "hash": "080c8b0e3c1186391dbd7c01fe13e68f",
+            "engine": "syrtis"
+        },
+        "refunds": {
+            "hash": "418302921e9496e69497e4b3a5f7f789",
+            "engine": "syrtis"
+        }
+    },
+    "pages/payments/show.zh.yml": {
+        "page_icon": {
+            "hash": "d94986d2f21cc73b61879fcf99d4945e",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        },
+        "receipt": {
+            "hash": "080c8b0e3c1186391dbd7c01fe13e68f",
+            "engine": "syrtis"
+        },
+        "refunds": {
+            "hash": "418302921e9496e69497e4b3a5f7f789",
+            "engine": "syrtis"
+        }
+    }
+}

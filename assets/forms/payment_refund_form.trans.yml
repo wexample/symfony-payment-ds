@@ -15,3 +15,21 @@ fr:
       label: Motif
   action:
     refund: Rembourser
+
+zh:
+  field:
+    amount:
+      label: 退款金额
+    reason:
+      label: 原因
+  action:
+    refund: 退款
+
+ar:
+  field:
+    amount:
+      label: 'المبلغ المراد استرداده'
+    reason:
+      label: السبب
+  action:
+    refund: استرداد

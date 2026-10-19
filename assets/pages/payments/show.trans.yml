@@ -9,3 +9,15 @@ fr:
   page_icon: ph:bold/receipt
   receipt: Reçu
   refunds: Remboursements
+
+zh:
+  page_title: 支付
+  page_icon: 'ph:bold/receipt'
+  receipt: 收据
+  refunds: 退款
+
+ar:
+  page_title: الدفع
+  page_icon: 'ph:bold/receipt'
+  receipt: إيصال
+  refunds: 'المبالغ المستردة'

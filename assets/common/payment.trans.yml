@@ -115,3 +115,121 @@ fr:
       bic: BIC
       amount: Montant
       reference: Référence à indiquer sur le virement
+
+zh:
+  no_description: 付款
+  no_refund: 不退款。
+  field:
+    description: 用途
+    amount: 金额
+    method: 支付方式
+    status: 状态
+    refunded: 已退款
+    failure: 失败原因
+    date_created: 创建日期
+    date_paid: 支付日期
+    customer: 付款人
+    provider: 服务提供商
+    provider_reference: 服务提供商的参考
+    payable: 支付对象
+    reason: 原因
+  method:
+    card: 信用卡
+    demo_card: 演示卡，演示提供商
+    sepa_debit: 直接借记
+    transfer: 银行转账
+    cash: 现金
+    cheque: 支票
+    other: 其他
+  status:
+    created: 已创建
+    pending: 待处理
+    processing: 处理中
+    succeeded: 已支付
+    failed: 支付失败
+    canceled: 已取消
+    partially_refunded: 部分退款
+    refunded: 已退款
+  outcome:
+    succeeded:
+      title: 付款已收到
+      body: '%amount% 已收到。谢谢。'
+    failed:
+      title: 付款失败
+      body: 没有任何款项被扣除。您可以再试一次，使用相同或其他方式。
+    canceled:
+      title: 付款已取消
+      body: 没有任何款项被扣除。
+    manual:
+      title: 等待您的付款
+      body: '请手动支付 %amount%。一旦款项到账，付款将被标记为已收到。'
+    confirm:
+      title: 您的付款
+    waiting:
+      title: 付款正在确认中
+      body: 提供商尚未回复；该页面将在收到回复后显示。
+    transfer:
+      holder: 账户持有人
+      iban: 国际银行账户号码（IBAN）
+      bic: 银行识别码（BIC）
+      amount: 金额
+      reference: 转账时写入的参考
+
+ar:
+  no_description: الدفع
+  no_refund: 'لا يوجد استرداد.'
+  field:
+    description: لـ
+    amount: المبلغ
+    method: الطريقة
+    status: الحالة
+    refunded: 'تم الاسترداد'
+    failure: 'لماذا فشل'
+    date_created: التاريخ
+    date_paid: 'تم الدفع في'
+    customer: الدافع
+    provider: المزود
+    provider_reference: 'مرجع المزود'
+    payable: 'كائن مدفوع'
+    reason: السبب
+  method:
+    card: بطاقة
+    demo_card: 'بطاقة، مزود تجريبي'
+    sepa_debit: 'خصم مباشر'
+    transfer: 'تحويل مصرفي'
+    cash: نقدي
+    cheque: شيك
+    other: آخر
+  status:
+    created: 'تم الإنشاء'
+    pending: 'قيد الانتظار'
+    processing: 'قيد المعالجة'
+    succeeded: مدفوع
+    failed: فشل
+    canceled: ملغى
+    partially_refunded: 'تم استرداد جزئي'
+    refunded: 'تم الاسترداد'
+  outcome:
+    succeeded:
+      title: 'تم استلام الدفع'
+      body: '%amount% تم استلامه. شكرًا لك.'
+    failed:
+      title: 'فشل الدفع'
+      body: 'لم يتم أخذ أي شيء. يمكنك المحاولة مرة أخرى، بنفس الطريقة أو بطريقة أخرى.'
+    canceled:
+      title: 'تم إلغاء الدفع'
+      body: 'لم يتم أخذ أي شيء.'
+    manual:
+      title: 'في انتظار دفعتك'
+      body: '%amount% للدفع يدويًا. يتم اعتبار الدفع مستلمًا بمجرد وصوله.'
+    confirm:
+      title: دفعك
+    waiting:
+      title: 'يتم تأكيد الدفع'
+      body: 'لم يرد المزود بعد؛ ستظهر إجابته على هذه الصفحة بمجرد وصولها.'
+    transfer:
+      holder: 'اسم صاحب الحساب'
+      iban: IBAN
+      bic: BIC
+      amount: المبلغ
+      reference: 'المرجع الذي يجب كتابته على التحويل'

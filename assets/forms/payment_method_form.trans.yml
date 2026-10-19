@@ -41,3 +41,47 @@ fr:
           label: Autre
   action:
     pay: Payer
+
+zh:
+  field:
+    method:
+      label: 如何支付
+      choice:
+        card:
+          label: 信用卡
+        demo_card:
+          label: 演示提供商的信用卡
+        sepa_debit:
+          label: 直接扣款
+        transfer:
+          label: 银行转账
+        cash:
+          label: 现金
+        cheque:
+          label: 支票
+        other:
+          label: 其他
+  action:
+    pay: 支付
+
+ar:
+  field:
+    method:
+      label: 'طريقة الدفع'
+      choice:
+        card:
+          label: بطاقة
+        demo_card:
+          label: 'بطاقة، مزود تجريبي'
+        sepa_debit:
+          label: 'خصم مباشر'
+        transfer:
+          label: 'تحويل بنكي'
+        cash:
+          label: نقداً
+        cheque:
+          label: شيك
+        other:
+          label: آخر
+  action:
+    pay: ادفع

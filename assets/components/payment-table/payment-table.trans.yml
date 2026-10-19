@@ -19,3 +19,25 @@ fr:
     method: Moyen
     provider: Prestataire
     status: Statut
+
+zh:
+  no_description: 付款
+  column:
+    date: 日期
+    description: 用途
+    customer: 付款人
+    amount: 金额
+    method: 方式
+    provider: 提供者
+    status: 状态
+
+ar:
+  no_description: دفعة
+  column:
+    date: التاريخ
+    description: لـ
+    customer: الدافع
+    amount: المبلغ
+    method: الطريقة
+    provider: المزود
+    status: الحالة

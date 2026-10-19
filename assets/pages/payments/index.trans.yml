@@ -7,3 +7,13 @@ fr:
   page_title: Mes paiements
   page_icon: ph:bold/receipt
   intro: Ce que vous avez payé, ou tenté de payer, et où en est chaque paiement.
+
+zh:
+  page_title: 我的付款
+  page_icon: 'ph:bold/receipt'
+  intro: 您已支付的内容、尝试支付的内容以及每笔付款的状态。
+
+ar:
+  page_title: مدفوعاتي
+  page_icon: 'ph:bold/receipt'
+  intro: 'ما دفعته، أو حاولت دفعه، ومكانة كل دفعة.'

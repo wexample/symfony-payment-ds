@@ -9,3 +9,15 @@ fr:
   page_icon: ph:bold/receipt
   heading: "Paiement %reference%"
   refunds: Remboursements
+
+zh:
+  page_title: 收据
+  page_icon: 'ph:bold/receipt'
+  heading: '支付 %reference%'
+  refunds: 退款
+
+ar:
+  page_title: إيصال
+  page_icon: 'ph:bold/receipt'
+  heading: 'الدفع %reference%'
+  refunds: 'المبالغ المستردة'

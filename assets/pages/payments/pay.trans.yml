@@ -5,3 +5,11 @@ en:
 fr:
   page_title: Payer
   page_icon: ph:bold/credit-card
+
+zh:
+  page_title: 支付
+  page_icon: 'ph:bold/credit-card'
+
+ar:
+  page_title: الدفع
+  page_icon: 'ph:bold/credit-card'

@@ -9,3 +9,15 @@ fr:
   page_icon: ph:bold/credit-card
   retry: Réessayer
   receipt: Reçu
+
+zh:
+  page_title: 支付
+  page_icon: 'ph:bold/credit-card'
+  retry: 再试一次
+  receipt: 收据
+
+ar:
+  page_title: الدفع
+  page_icon: 'ph:bold/credit-card'
+  retry: 'حاول مرة أخرى'
+  receipt: إيصال

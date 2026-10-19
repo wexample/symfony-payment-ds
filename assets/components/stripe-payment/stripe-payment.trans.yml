@@ -9,3 +9,15 @@ fr:
   pay: Payer
   failed: Le paiement n'a pas été confirmé.
   unavailable: Le formulaire de paiement n'a pas pu être chargé.
+
+zh:
+  loading: 正在加载支付表单…
+  pay: 支付
+  failed: 支付未确认。
+  unavailable: 支付表单无法加载。
+
+ar:
+  loading: 'جاري تحميل نموذج الدفع…'
+  pay: ادفع
+  failed: 'لم يتم تأكيد الدفع.'
+  unavailable: 'لم يتمكن من تحميل نموذج الدفع.'
