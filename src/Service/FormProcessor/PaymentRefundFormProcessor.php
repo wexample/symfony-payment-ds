@@ -6,6 +6,7 @@ use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Throwable;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
@@ -53,6 +54,12 @@ class PaymentRefundFormProcessor extends AbstractFormProcessor
         $data = null,
         array $options = []
     ): FormInterface {
+        // Given its payment by the payment's page: sent from anywhere else,
+        // there is none to refund.
+        if (null === $this->payment) {
+            throw new NotFoundHttpException('No payment to refund.');
+        }
+
         $decimals = MoneyHelper::getDecimals($this->payment->getCurrencyCode());
 
         return parent::createForm($data, $options + [
