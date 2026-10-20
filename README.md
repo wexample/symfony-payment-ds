@@ -1,6 +1,6 @@
 # symfony-payment-ds
 
-Version: 3.0.1
+Version: 3.0.2
 
 The interface of symfony-payment: the payment step, the return page, the payer's payments and their administration
 
@@ -25,10 +25,10 @@ The suite includes packages for configuration management, file handling, prompts
 
 - php: >=8.5
 - wexample/symfony-helpers: >=17.0.0
-- wexample/symfony-loader: >=23.2.0
-- wexample/symfony-design-system: >=37.0.0
+- wexample/symfony-loader: >=23.3.0
+- wexample/symfony-design-system: >=38.0.0
 - wexample/symfony-api: >=14.0.0
-- wexample/symfony-forms: >=13.0.0
+- wexample/symfony-forms: >=14.0.0
 - wexample/symfony-money: >=7.0.0
 - wexample/symfony-payment: >=4.0.0
 
