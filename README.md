@@ -1,6 +1,6 @@
 # symfony-payment-ds
 
-Version: 3.0.7
+Version: 3.0.8
 
 The interface of symfony-payment: the payment step, the return page, the payer's payments and their administration
 
