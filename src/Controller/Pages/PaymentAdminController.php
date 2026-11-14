@@ -2,6 +2,7 @@
 
 namespace Wexample\SymfonyPaymentDs\Controller\Pages;
 
+use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -105,6 +106,7 @@ final class PaymentAdminController extends AbstractPagesController
         Request $request,
         PaymentService $payments,
         PaymentRepository $repository,
+        LoggerInterface $logger,
         #[Autowire(param: 'wexample_symfony_payment.administration.role')]
         ?string $administrationRole,
     ): RedirectResponse {
@@ -122,7 +124,15 @@ final class PaymentAdminController extends AbstractPagesController
                 self::ACTION_CONFIRM => $payments->confirmManualPayment($payment),
                 self::ACTION_CANCEL => $payments->cancel($payment),
             };
-        } catch (Throwable) {
+        } catch (Throwable $exception) {
+            // The page only says it was refused: why is kept for whoever reads the log.
+            $logger->error('The action {action} on payment {payment} failed: {message}', [
+                'action' => $action,
+                'payment' => (string) $payment->getId(),
+                'message' => $exception->getMessage(),
+                'exception' => $exception,
+            ]);
+
             return $this->back($payment, self::PARAMETER_REFUSED, $action);
         }
 

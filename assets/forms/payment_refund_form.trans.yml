@@ -6,6 +6,8 @@ en:
       label: Reason
   action:
     refund: Refund
+  error:
+    refused: 'The refund could not be made. Check the payment with its provider before trying again.'
 
 fr:
   field:
@@ -15,6 +17,8 @@ fr:
       label: Motif
   action:
     refund: Rembourser
+  error:
+    refused: 'Le remboursement n''a pas pu être effectué. Vérifiez le paiement auprès de son prestataire avant de réessayer.'
 
 zh:
   field:
@@ -24,6 +28,8 @@ zh:
       label: 原因
   action:
     refund: 退款
+  error:
+    refused: '无法完成退款。请先向支付服务商核实该笔付款，再重试。'
 
 ar:
   field:
@@ -33,6 +39,8 @@ ar:
       label: السبب
   action:
     refund: استرداد
+  error:
+    refused: 'تعذّر إجراء الاسترداد. تحقّق من الدفعة لدى مزوّدها قبل المحاولة مرة أخرى.'
 
 hi:
   field:
@@ -42,6 +50,8 @@ hi:
       label: कारण
   action:
     refund: वापसी
+  error:
+    refused: 'वापसी नहीं की जा सकी। दोबारा प्रयास करने से पहले भुगतान को उसके प्रदाता के पास जाँचें।'
 
 he:
   field:
@@ -51,6 +61,8 @@ he:
       label: סיבה
   action:
     refund: החזר
+  error:
+    refused: 'לא ניתן היה לבצע את ההחזר. בדקו את התשלום מול הספק שלו לפני שתנסו שוב.'
 
 fa:
   field:
@@ -60,6 +72,8 @@ fa:
       label: دلیل
   action:
     refund: بازپرداخت
+  error:
+    refused: 'بازپرداخت انجام نشد. پیش از تلاش دوباره، پرداخت را نزد ارائه‌دهنده‌اش بررسی کنید.'
 
 ur:
   field:
@@ -69,6 +83,8 @@ ur:
       label: وجہ
   action:
     refund: 'واپس کریں'
+  error:
+    refused: 'رقم واپس نہیں کی جا سکی۔ دوبارہ کوشش سے پہلے ادائیگی اس کے فراہم کنندہ کے پاس چیک کریں۔'
 
 ja:
   field:
@@ -78,6 +94,8 @@ ja:
       label: 理由
   action:
     refund: 返金
+  error:
+    refused: '返金できませんでした。再度お試しになる前に、決済代行会社で支払いをご確認ください。'
 
 ko:
   field:
@@ -87,6 +105,8 @@ ko:
       label: 사유
   action:
     refund: 환불
+  error:
+    refused: '환불할 수 없습니다. 다시 시도하기 전에 결제 대행사에서 결제를 확인하세요.'
 
 bn:
   field:
@@ -96,6 +116,8 @@ bn:
       label: কারণ
   action:
     refund: Refund
+  error:
+    refused: 'ফেরত দেওয়া যায়নি। আবার চেষ্টা করার আগে প্রদানকারীর কাছে পেমেন্টটি যাচাই করুন।'
 
 th:
   field:
@@ -105,6 +127,8 @@ th:
       label: เหตุผล
   action:
     refund: คืนเงิน
+  error:
+    refused: 'ไม่สามารถคืนเงินได้ โปรดตรวจสอบการชำระเงินกับผู้ให้บริการก่อนลองอีกครั้ง'
 
 de:
   field:
@@ -114,6 +138,8 @@ de:
       label: Grund
   action:
     refund: Rückerstattung
+  error:
+    refused: 'Die Rückerstattung konnte nicht durchgeführt werden. Prüfen Sie die Zahlung bei ihrem Anbieter, bevor Sie es erneut versuchen.'
 
 fi:
   field:
@@ -123,6 +149,8 @@ fi:
       label: Syytä
   action:
     refund: Palauta
+  error:
+    refused: 'Palautusta ei voitu tehdä. Tarkista maksu sen palveluntarjoajalta ennen kuin yrität uudelleen.'
 
 ru:
   field:
@@ -132,6 +160,8 @@ ru:
       label: Причина
   action:
     refund: Возврат
+  error:
+    refused: 'Не удалось выполнить возврат. Проверьте платёж у его провайдера, прежде чем повторить попытку.'
 
 pl:
   field:
@@ -141,6 +171,8 @@ pl:
       label: Powód
   action:
     refund: Zwrot
+  error:
+    refused: 'Nie udało się wykonać zwrotu. Sprawdź płatność u jej dostawcy, zanim spróbujesz ponownie.'
 
 es:
   field:
@@ -150,6 +182,8 @@ es:
       label: Razón
   action:
     refund: Reembolsar
+  error:
+    refused: 'No se pudo realizar el reembolso. Compruebe el pago con su proveedor antes de volver a intentarlo.'
 
 it:
   field:
@@ -159,6 +193,8 @@ it:
       label: Motivo
   action:
     refund: Rimborsa
+  error:
+    refused: 'Non è stato possibile effettuare il rimborso. Verifica il pagamento presso il suo fornitore prima di riprovare.'
 
 pt_BR:
   field:
@@ -168,6 +204,8 @@ pt_BR:
       label: Motivo
   action:
     refund: Reembolsar
+  error:
+    refused: 'Não foi possível fazer o reembolso. Verifique o pagamento com o provedor antes de tentar novamente.'
 
 tr:
   field:
@@ -177,6 +215,8 @@ tr:
       label: Sebep
   action:
     refund: İade
+  error:
+    refused: 'İade yapılamadı. Tekrar denemeden önce ödemeyi sağlayıcısında kontrol edin.'
 
 vi:
   field:
@@ -186,6 +226,8 @@ vi:
       label: 'Lý do'
   action:
     refund: 'Hoàn lại'
+  error:
+    refused: 'Không thể hoàn tiền. Hãy kiểm tra khoản thanh toán với nhà cung cấp trước khi thử lại.'
 
 id:
   field:
@@ -195,6 +237,8 @@ id:
       label: Alasan
   action:
     refund: Refund
+  error:
+    refused: 'Pengembalian dana tidak dapat dilakukan. Periksa pembayaran di penyedianya sebelum mencoba lagi.'
 
 nl:
   field:
@@ -204,3 +248,5 @@ nl:
       label: Reden
   action:
     refund: Terugbetalen
+  error:
+    refused: 'De terugbetaling kon niet worden uitgevoerd. Controleer de betaling bij de aanbieder voordat u het opnieuw probeert.'
