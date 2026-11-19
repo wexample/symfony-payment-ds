@@ -1,6 +1,6 @@
 {
   "name": "wexample/symfony-payment-ds",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "type": "library",
   "license": "MIT",
   "description": "The interface of symfony-payment: the payment step, the return page, the payer's payments and their administration",
@@ -25,8 +25,8 @@
     "wexample/symfony-helpers": ">=19.3.0",
     "wexample/symfony-loader": ">=28.0.0",
     "wexample/symfony-design-system": ">=49.0.0",
-    "wexample/symfony-api": ">=21.0.0",
-    "wexample/symfony-forms": ">=18.0.0",
+    "wexample/symfony-api": ">=22.0.0",
+    "wexample/symfony-forms": ">=19.0.0",
     "wexample/symfony-money": ">=9.0.0",
     "wexample/symfony-payment": ">=7.0.0"
   },
